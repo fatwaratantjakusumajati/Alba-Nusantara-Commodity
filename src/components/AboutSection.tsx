@@ -9,12 +9,12 @@ const AboutSection = () => (
           <div className="relative">
             <img
               src={aboutImg}
-              alt="Tim profesional PT. MetalPro"
+              alt="Tim NusaNature"
               className="w-full rounded-2xl object-cover aspect-[4/3]"
               style={{ boxShadow: "var(--shadow-lg)" }}
             />
-            <div className="absolute -bottom-6 -right-6 gradient-navy text-primary-foreground rounded-xl p-6 hidden md:block" style={{ boxShadow: "var(--shadow-xl)" }}>
-              <div className="text-3xl font-black">28+</div>
+            <div className="absolute -bottom-6 -right-6 gradient-forest text-primary-foreground rounded-xl p-6 hidden md:block" style={{ boxShadow: "var(--shadow-xl)" }}>
+              <div className="text-3xl font-black">15+</div>
               <div className="text-sm text-primary-foreground/80">Tahun Pengalaman</div>
             </div>
           </div>
@@ -25,28 +25,22 @@ const AboutSection = () => (
             Tentang Kami
           </span>
           <h2 className="section-title mt-2 mb-6">
-            Mitra Manufaktur Terpercaya di Indonesia
+            Produk Alam Premium dari Indonesia
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-4">
-            PT. MetalPro Indonesia didirikan pada tahun 1995 dan telah berkembang
-            menjadi salah satu perusahaan manufaktur terkemuka di Indonesia.
-            Dengan fasilitas produksi seluas 25.000 m² dan lebih dari 500
-            karyawan terampil, kami memproduksi berbagai komponen logam presisi
-            untuk industri otomotif, konstruksi, dan infrastruktur.
+            NusaNature adalah perusahaan yang berfokus pada pengolahan dan distribusi produk alam premium Indonesia. Didirikan pada tahun 2009, kami berkomitmen menghadirkan kualitas terbaik dari kekayaan alam Nusantara — mulai dari Essential Oil, Bird Nest, Cocoa Beans, hingga Clove — untuk pasar domestik dan internasional.
           </p>
           <p className="text-muted-foreground leading-relaxed mb-6">
-            Komitmen kami terhadap kualitas dibuktikan dengan sertifikasi ISO
-            9001:2015, ISO 14001:2015, dan OHSAS 18001. Kami terus berinovasi
-            dengan teknologi terkini untuk memenuhi standar tertinggi.
+            Dengan fasilitas pengolahan modern dan tim ahli berpengalaman, kami memastikan setiap produk melewati proses quality control ketat untuk memenuhi standar ekspor tertinggi. Sertifikasi ISO 22000 dan HACCP menjadi bukti komitmen kami terhadap kualitas.
           </p>
           <div className="grid grid-cols-3 gap-6">
             {[
-              { value: "500+", label: "Karyawan" },
-              { value: "1200+", label: "Proyek" },
-              { value: "50+", label: "Klien" },
+              { value: "200+", label: "Karyawan" },
+              { value: "30+", label: "Negara Ekspor" },
+              { value: "500+", label: "Mitra" },
             ].map((stat) => (
               <div key={stat.label}>
-                <div className="text-2xl md:text-3xl font-bold text-accent">{stat.value}</div>
+                <div className="text-2xl md:text-3xl font-bold text-green-accent">{stat.value}</div>
                 <div className="text-sm text-muted-foreground">{stat.label}</div>
               </div>
             ))}

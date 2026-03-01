@@ -2,12 +2,12 @@ import { Shield, Lightbulb, Users, Award, Leaf, Heart } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 
 const values = [
-  { icon: Shield, title: "Integritas", desc: "Menjunjung tinggi kejujuran dan transparansi dalam setiap aspek bisnis" },
-  { icon: Lightbulb, title: "Inovasi", desc: "Terus berinovasi dan mengadopsi teknologi terbaru untuk peningkatan kualitas" },
-  { icon: Award, title: "Kualitas", desc: "Mengutamakan standar kualitas tertinggi di setiap tahap produksi" },
-  { icon: Users, title: "Kolaborasi", desc: "Membangun kerja sama tim yang solid dan kemitraan yang saling menguntungkan" },
-  { icon: Leaf, title: "Keberlanjutan", desc: "Berkomitmen pada praktik bisnis yang ramah lingkungan dan berkelanjutan" },
-  { icon: Heart, title: "Dedikasi", desc: "Memberikan pelayanan terbaik dengan penuh dedikasi dan tanggung jawab" },
+  { icon: Leaf, title: "Keberlanjutan", desc: "Berkomitmen pada praktik bisnis yang ramah lingkungan dan menjaga kelestarian alam Indonesia" },
+  { icon: Award, title: "Kualitas Premium", desc: "Mengutamakan standar kualitas tertinggi di setiap tahap pengolahan produk alam" },
+  { icon: Shield, title: "Integritas", desc: "Menjunjung tinggi kejujuran dan transparansi dalam setiap aspek bisnis dan kemitraan" },
+  { icon: Lightbulb, title: "Inovasi", desc: "Terus berinovasi dalam teknologi pengolahan untuk meningkatkan kualitas produk" },
+  { icon: Users, title: "Pemberdayaan", desc: "Memberdayakan petani lokal melalui kemitraan adil dan pelatihan berkelanjutan" },
+  { icon: Heart, title: "Dedikasi", desc: "Memberikan pelayanan terbaik dengan penuh dedikasi dan tanggung jawab sosial" },
 ];
 
 const CoreValuesSection = () => (
