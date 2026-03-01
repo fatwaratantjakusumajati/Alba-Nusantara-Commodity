@@ -5,9 +5,9 @@ import hero2 from "@/assets/hero2.jpg";
 import hero3 from "@/assets/hero3.jpg";
 
 const slides = [
-  { image: hero1, alt: "Modern production line" },
-  { image: hero2, alt: "Manufacturing facility aerial view" },
-  { image: hero3, alt: "Industrial warehouse" },
+  { image: hero1, alt: "Tropical plantation" },
+  { image: hero2, alt: "Spice farm aerial view" },
+  { image: hero3, alt: "Essential oil production" },
 ];
 
 const HeroSection = () => {
@@ -31,7 +31,6 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden">
-      {/* Slides */}
       {slides.map((slide, i) => (
         <div
           key={i}
@@ -39,33 +38,26 @@ const HeroSection = () => {
             i === current ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img
-            src={slide.image}
-            alt={slide.alt}
-            className="w-full h-full object-cover"
-          />
+          <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover" />
         </div>
       ))}
 
-      {/* Overlay */}
       <div className="absolute inset-0 hero-overlay" />
 
-      {/* Content */}
       <div className="relative z-10 h-full flex items-center">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl">
             <div className="inline-block px-4 py-1.5 rounded-full border border-primary-foreground/25 bg-primary-foreground/10 backdrop-blur-sm mb-6">
               <span className="text-sm font-medium text-primary-foreground/90">
-                Trusted Manufacturing Partner Since 1995
+                Premium Natural Products from Indonesia
               </span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-primary-foreground leading-[1.1] tracking-tight mb-6">
-              Solusi Manufaktur{" "}
-              <span className="text-gradient">Terpercaya</span>
+              Kekayaan Alam{" "}
+              <span className="text-gradient">Nusantara</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-xl mb-8 leading-relaxed">
-              Menghadirkan produk berkualitas tinggi dengan teknologi modern dan
-              standar internasional untuk kebutuhan industri Anda.
+              Menghadirkan produk alam premium — Essential Oil, Bird Nest, Cocoa Beans, dan Clove — dengan kualitas terbaik dari bumi Indonesia.
             </p>
             <button
               onClick={scrollToProducts}
@@ -77,7 +69,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Navigation Arrows */}
       <button
         onClick={prev}
         className="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 z-20 w-12 h-12 rounded-full bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/20 flex items-center justify-center text-primary-foreground hover:bg-primary-foreground/20 transition-colors"
@@ -91,16 +82,13 @@ const HeroSection = () => {
         <ChevronRight className="w-5 h-5" />
       </button>
 
-      {/* Dots */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2.5">
         {slides.map((_, i) => (
           <button
             key={i}
             onClick={() => setCurrent(i)}
             className={`h-2 rounded-full transition-all duration-300 ${
-              i === current
-                ? "w-8 bg-primary-foreground"
-                : "w-2 bg-primary-foreground/40 hover:bg-primary-foreground/60"
+              i === current ? "w-8 bg-primary-foreground" : "w-2 bg-primary-foreground/40 hover:bg-primary-foreground/60"
             }`}
           />
         ))}

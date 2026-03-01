@@ -1,6 +1,6 @@
-import { Factory, MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Leaf, MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
 
-const quickLinks = ["About Us", "Products", "Production Process", "Contact"];
+const quickLinks = ["About Us", "Products", "Contact"];
 const socialIcons = [
   { icon: Facebook, label: "Facebook" },
   { icon: Instagram, label: "Instagram" },
@@ -13,7 +13,6 @@ const FooterSection = () => {
     const map: Record<string, string> = {
       "About Us": "about",
       Products: "products",
-      "Production Process": "production-process",
       Contact: "contact",
     };
     const el = document.getElementById(map[id] || id);
@@ -24,24 +23,21 @@ const FooterSection = () => {
   };
 
   return (
-    <footer id="contact" className="gradient-navy text-primary-foreground">
+    <footer id="contact" className="gradient-forest text-primary-foreground">
       <div className="container mx-auto px-4 py-16 md:py-20">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
-          {/* Company */}
           <div>
             <div className="flex items-center gap-2.5 mb-5">
               <div className="w-9 h-9 rounded-lg bg-primary-foreground/15 flex items-center justify-center">
-                <Factory className="w-5 h-5" />
+                <Leaf className="w-5 h-5" />
               </div>
-              <span className="text-lg font-bold">PT. MetalPro</span>
+              <span className="text-lg font-bold">NusaNature</span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Perusahaan manufaktur terkemuka yang menghasilkan produk logam
-              berkualitas tinggi untuk berbagai kebutuhan industri.
+              Perusahaan terkemuka dalam pengolahan dan ekspor produk alam premium Indonesia ke pasar global.
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="font-bold mb-4 text-primary-foreground/90">Quick Links</h4>
             <div className="space-y-2.5">
@@ -57,26 +53,24 @@ const FooterSection = () => {
             </div>
           </div>
 
-          {/* Contact */}
           <div>
             <h4 className="font-bold mb-4 text-primary-foreground/90">Kontak</h4>
             <div className="space-y-3">
               <div className="flex gap-3 text-sm text-primary-foreground/70">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-                <span>Jl. Industri Raya No. 88, Kawasan Industri MM2100, Bekasi, Jawa Barat 17530</span>
+                <span>Jl. Raya Kekayaan Alam No. 25, Jakarta Selatan 12560</span>
               </div>
               <div className="flex gap-3 text-sm text-primary-foreground/70">
                 <Phone className="w-4 h-4 shrink-0" />
-                <span>+62 21 8998 7654</span>
+                <span>+62 21 7890 1234</span>
               </div>
               <div className="flex gap-3 text-sm text-primary-foreground/70">
                 <Mail className="w-4 h-4 shrink-0" />
-                <span>info@metalpro.co.id</span>
+                <span>info@nusanature.co.id</span>
               </div>
             </div>
           </div>
 
-          {/* Social */}
           <div>
             <h4 className="font-bold mb-4 text-primary-foreground/90">Ikuti Kami</h4>
             <div className="flex gap-3">
@@ -96,7 +90,7 @@ const FooterSection = () => {
 
         <div className="border-t border-primary-foreground/15 mt-12 pt-8 text-center">
           <p className="text-sm text-primary-foreground/50">
-            © {new Date().getFullYear()} PT. MetalPro Indonesia. All rights reserved.
+            © {new Date().getFullYear()} NusaNature Indonesia. All rights reserved.
           </p>
         </div>
       </div>
