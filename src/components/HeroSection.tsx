@@ -32,7 +32,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden">
+    <section id="home" className="relative h-screen w-full overflow-hidden bg-foreground/95">
       {slides.map((slide, i) => (
         <div
           key={i}
@@ -40,7 +40,7 @@ const HeroSection = () => {
             i === current ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img src={slide.image} alt={slide.alt} className="w-full h-full object-contain bg-black/90" />
+          <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover scale-[0.85] object-center" />
         </div>
       ))}
 
