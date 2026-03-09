@@ -2,7 +2,7 @@ import AnimatedSection from "./AnimatedSection";
 import aboutImg from "@/assets/about.jpg";
 
 const AboutSection = () => (
-  <section id="about" className="section-padding bg-background">
+  <section id="about" className="pt-12 md:pt-16 pb-20 md:pb-28 px-4 md:px-8 bg-background">
     <div className="container mx-auto">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         <AnimatedSection>
