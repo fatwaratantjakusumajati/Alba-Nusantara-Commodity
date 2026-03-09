@@ -32,7 +32,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative h-screen w-full overflow-hidden bg-foreground/95">
+    <section id="home" className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] w-full overflow-hidden">
       {slides.map((slide, i) => (
         <div
           key={i}
