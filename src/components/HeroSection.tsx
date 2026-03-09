@@ -40,7 +40,7 @@ const HeroSection = () => {
             i === current ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover scale-[0.85] object-center" />
+          <img src={slide.image} alt={slide.alt} className="w-full h-full object-contain" />
         </div>
       ))}
 
