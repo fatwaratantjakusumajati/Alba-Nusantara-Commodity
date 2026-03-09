@@ -3,13 +3,13 @@ import { Menu, X, Leaf } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
 
 const navItems = [
-  { label: "Home", href: "home" },
-  { label: "About Us", href: "about" },
-  { label: "Vision & Mission", href: "vision-mission" },
-  { label: "Core Values", href: "core-values" },
-  { label: "Why Choose Us", href: "why-choose-us" },
-  { label: "Products", href: "products" },
-  { label: "Contact", href: "contact" },
+  { label: "Home / Beranda", href: "home" },
+  { label: "About Us / Tentang Kami", href: "about" },
+  { label: "Vision & Mission / Visi & Misi", href: "vision-mission" },
+  { label: "Core Values / Nilai Inti", href: "core-values" },
+  { label: "Why Choose Us / Mengapa Kami", href: "why-choose-us" },
+  { label: "Products / Produk", href: "products" },
+  { label: "Contact / Kontak", href: "contact" },
 ];
 
 const Header = () => {
