@@ -3,13 +3,11 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import hero1 from "@/assets/hero1.jpg";
 import hero2 from "@/assets/hero2.jpg";
 import hero3 from "@/assets/hero3.jpg";
-import hero4 from "@/assets/hero4.jpg";
 
 const slides = [
-  { image: hero1, alt: "Essential Oil premium" },
-  { image: hero2, alt: "Bird Nest premium" },
-  { image: hero3, alt: "Cocoa Beans premium" },
-  { image: hero4, alt: "Clove premium" },
+  { image: hero1, alt: "Tropical plantation" },
+  { image: hero2, alt: "Spice farm aerial view" },
+  { image: hero3, alt: "Essential oil production" },
 ];
 
 const HeroSection = () => {
@@ -32,7 +30,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative h-[60vh] md:h-[70vh] lg:h-[80vh] w-full overflow-hidden">
+    <section id="home" className="relative h-screen w-full overflow-hidden">
       {slides.map((slide, i) => (
         <div
           key={i}
@@ -40,7 +38,7 @@ const HeroSection = () => {
             i === current ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover" style={{ objectPosition: 'center 60%' }} />
+          <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover" />
         </div>
       ))}
 
