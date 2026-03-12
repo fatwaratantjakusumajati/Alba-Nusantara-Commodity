@@ -1,4 +1,5 @@
-import { Leaf, MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const quickLinks = ["About Us", "Products", "Contact"];
 const socialIcons = [
@@ -27,11 +28,8 @@ const FooterSection = () => {
       <div className="container mx-auto px-4 py-16 md:py-20">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           <div>
-            <div className="flex items-center gap-2.5 mb-5">
-              <div className="w-9 h-9 rounded-lg bg-primary-foreground/15 flex items-center justify-center">
-                <Leaf className="w-5 h-5" />
-              </div>
-              <span className="text-lg font-bold">NusaNature</span>
+            <div className="mb-5">
+              <img src={logo} alt="Alba Nusantara Commodity" className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
               Perusahaan terkemuka dalam pengolahan dan ekspor produk alam premium Indonesia ke pasar global.
@@ -90,7 +88,7 @@ const FooterSection = () => {
 
         <div className="border-t border-primary-foreground/15 mt-12 pt-8 text-center">
           <p className="text-sm text-primary-foreground/50">
-            © {new Date().getFullYear()} NusaNature Indonesia. All rights reserved.
+            © {new Date().getFullYear()} Alba Nusantara Commodity. All rights reserved.
           </p>
         </div>
       </div>
