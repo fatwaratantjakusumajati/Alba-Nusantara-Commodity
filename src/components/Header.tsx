@@ -68,13 +68,12 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between h-16 md:h-20 px-4">
-        <button onClick={() => scrollTo("home")} className="flex items-center gap-2.5">
-          <div className={`w-9 h-9 rounded-lg flex items-center justify-center transition-colors ${showTransparent ? "bg-primary-foreground/20 backdrop-blur" : "gradient-forest"}`}>
-            <Leaf className="w-5 h-5 text-primary-foreground" />
-          </div>
-          <span className={`text-lg font-bold tracking-tight transition-colors ${showTransparent ? "text-primary-foreground" : "text-primary"}`}>
-            NusaNature
-          </span>
+        <button onClick={() => scrollTo("home")} className="flex items-center">
+          <img
+            src={logo}
+            alt="Alba Nusantara Commodity"
+            className={`h-10 md:h-12 w-auto transition-all ${showTransparent ? "brightness-0 invert" : ""}`}
+          />
         </button>
 
         <nav className="hidden lg:flex items-center gap-1">
