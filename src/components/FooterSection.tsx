@@ -1,4 +1,5 @@
-import { Leaf, MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const quickLinks = ["About Us", "Products", "Contact"];
 const socialIcons = [
