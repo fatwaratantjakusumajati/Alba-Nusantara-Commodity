@@ -2,6 +2,9 @@ import product1 from "@/assets/product1.jpg";
 import product2 from "@/assets/product2.jpg";
 import product3 from "@/assets/product3.jpg";
 import product4 from "@/assets/product4.jpg";
+import detailBirdnest from "@/assets/detail-birdnest.jpg";
+import detailCocoa from "@/assets/detail-cocoa.jpg";
+import detailClove from "@/assets/detail-clove.jpg";
 import { Droplets, Flower2, FlaskConical, ShieldCheck, Package, Truck, Thermometer, Sun, Search, Scissors, TreePine, Bug, Waves, Filter, Bird, Home, ClipboardCheck, Sparkles, Bean, Cherry, Timer, Wind, Warehouse } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
