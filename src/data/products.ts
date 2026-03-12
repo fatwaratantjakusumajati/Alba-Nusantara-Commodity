@@ -2,6 +2,9 @@ import product1 from "@/assets/product1.jpg";
 import product2 from "@/assets/product2.jpg";
 import product3 from "@/assets/product3.jpg";
 import product4 from "@/assets/product4.jpg";
+import detailBirdnest from "@/assets/detail-birdnest.jpg";
+import detailCocoa from "@/assets/detail-cocoa.jpg";
+import detailClove from "@/assets/detail-clove.jpg";
 import { Droplets, Flower2, FlaskConical, ShieldCheck, Package, Truck, Thermometer, Sun, Search, Scissors, TreePine, Bug, Waves, Filter, Bird, Home, ClipboardCheck, Sparkles, Bean, Cherry, Timer, Wind, Warehouse } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
@@ -16,6 +19,7 @@ export interface ProductData {
   name: string;
   tagline: string;
   image: string;
+  detailImage?: string;
   description: string[];
   benefits: string[];
   steps: ProductStep[];
@@ -51,6 +55,7 @@ export const productsData: ProductData[] = [
     name: "Bird Nest",
     tagline: "Sarang Burung Walet Premium dengan Standar Higienis Tertinggi",
     image: product2,
+    detailImage: detailBirdnest,
     description: [
       "Bird Nest atau sarang burung walet kami berasal dari rumah walet terkelola di Kalimantan dan Sumatera. Setiap sarang dipanen secara berkelanjutan dan diproses dengan standar higienis ketat untuk memenuhi regulasi ekspor ke China, Hong Kong, dan pasar Asia lainnya.",
       "Kami menyediakan berbagai grade sarang walet mulai dari AAA (utuh) hingga broken pieces, semuanya telah dibersihkan dan siap konsumsi maupun untuk bahan baku industri makanan kesehatan.",
@@ -75,6 +80,7 @@ export const productsData: ProductData[] = [
     name: "Cocoa Beans",
     tagline: "Biji Kakao Fermentasi Berkualitas dari Perkebunan Indonesia",
     image: product3,
+    detailImage: detailCocoa,
     description: [
       "Cocoa Beans kami berasal dari perkebunan kakao di Sulawesi Selatan, Sumatera Barat, dan Papua — daerah penghasil kakao terbaik Indonesia. Biji kakao kami diproses melalui fermentasi terkontrol untuk menghasilkan flavor cokelat yang khas dan diminati oleh produsen cokelat dunia.",
       "Kami menyuplai biji kakao fermentasi dan non-fermentasi dalam berbagai grade untuk industri cokelat, confectionery, dan kosmetik di Eropa, Amerika, dan Asia.",
@@ -99,6 +105,7 @@ export const productsData: ProductData[] = [
     name: "Clove",
     tagline: "Cengkeh Premium dengan Kadar Eugenol Tinggi dari Maluku & Sulawesi",
     image: product4,
+    detailImage: detailClove,
     description: [
       "Clove atau cengkeh kami berasal dari daerah penghasil cengkeh terbaik di Indonesia — Maluku, Sulawesi Utara, dan Jawa. Cengkeh Indonesia dikenal memiliki kadar eugenol tertinggi di dunia (80-90%), menjadikannya sangat diminati oleh industri makanan, farmasi, dan rokok kretek.",
       "Kami menyediakan whole cloves, clove stems, dan clove oil untuk pasar domestik dan ekspor ke India, Vietnam, Eropa, dan Timur Tengah.",
