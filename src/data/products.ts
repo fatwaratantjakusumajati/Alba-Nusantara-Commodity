@@ -55,6 +55,7 @@ export const productsData: ProductData[] = [
     name: "Bird Nest",
     tagline: "Sarang Burung Walet Premium dengan Standar Higienis Tertinggi",
     image: product2,
+    detailImage: detailBirdnest,
     description: [
       "Bird Nest atau sarang burung walet kami berasal dari rumah walet terkelola di Kalimantan dan Sumatera. Setiap sarang dipanen secara berkelanjutan dan diproses dengan standar higienis ketat untuk memenuhi regulasi ekspor ke China, Hong Kong, dan pasar Asia lainnya.",
       "Kami menyediakan berbagai grade sarang walet mulai dari AAA (utuh) hingga broken pieces, semuanya telah dibersihkan dan siap konsumsi maupun untuk bahan baku industri makanan kesehatan.",
