@@ -80,6 +80,7 @@ export const productsData: ProductData[] = [
     name: "Cocoa Beans",
     tagline: "Biji Kakao Fermentasi Berkualitas dari Perkebunan Indonesia",
     image: product3,
+    detailImage: detailCocoa,
     description: [
       "Cocoa Beans kami berasal dari perkebunan kakao di Sulawesi Selatan, Sumatera Barat, dan Papua — daerah penghasil kakao terbaik Indonesia. Biji kakao kami diproses melalui fermentasi terkontrol untuk menghasilkan flavor cokelat yang khas dan diminati oleh produsen cokelat dunia.",
       "Kami menyuplai biji kakao fermentasi dan non-fermentasi dalam berbagai grade untuk industri cokelat, confectionery, dan kosmetik di Eropa, Amerika, dan Asia.",
