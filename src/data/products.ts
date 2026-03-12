@@ -19,6 +19,7 @@ export interface ProductData {
   name: string;
   tagline: string;
   image: string;
+  detailImage?: string;
   description: string[];
   benefits: string[];
   steps: ProductStep[];
