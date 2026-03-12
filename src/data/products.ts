@@ -5,6 +5,7 @@ import product4 from "@/assets/product4.jpg";
 import detailBirdnest from "@/assets/detail-birdnest.jpg";
 import detailCocoa from "@/assets/detail-cocoa.jpg";
 import detailClove from "@/assets/detail-clove.jpg";
+import detailEssentialOil from "@/assets/detail-essential-oil.jpg";
 import { Droplets, Flower2, FlaskConical, ShieldCheck, Package, Truck, Thermometer, Sun, Search, Scissors, TreePine, Bug, Waves, Filter, Bird, Home, ClipboardCheck, Sparkles, Bean, Cherry, Timer, Wind, Warehouse } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
@@ -31,6 +32,7 @@ export const productsData: ProductData[] = [
     name: "Essential Oil",
     tagline: "Minyak Atsiri Murni dari Tanaman Aromatik Pilihan Indonesia",
     image: product1,
+    detailImage: detailEssentialOil,
     description: [
       "Essential Oil atau minyak atsiri kami diekstraksi dari tanaman aromatik terbaik Indonesia seperti patchouli, citronella, vetiver, dan clove leaf. Proses distilasi dilakukan dengan teknologi modern untuk menjaga kemurnian dan kualitas aroma.",
       "Produk kami digunakan secara luas dalam industri aromaterapi, kosmetik, farmasi, dan parfum di lebih dari 20 negara. Setiap batch melewati uji laboratorium ketat untuk memastikan kesesuaian dengan standar internasional.",
