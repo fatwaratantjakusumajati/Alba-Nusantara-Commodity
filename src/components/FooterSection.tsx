@@ -88,7 +88,7 @@ const FooterSection = () => {
 
         <div className="border-t border-primary-foreground/15 mt-12 pt-8 text-center">
           <p className="text-sm text-primary-foreground/50">
-            © {new Date().getFullYear()} NusaNature Indonesia. All rights reserved.
+            © {new Date().getFullYear()} Alba Nusantara Commodity. All rights reserved.
           </p>
         </div>
       </div>
