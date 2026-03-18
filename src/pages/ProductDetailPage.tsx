@@ -33,7 +33,7 @@ const ProductDetailPage = () => {
 
       {/* Hero Banner */}
       <section className="relative pt-20">
-        <div className="relative h-[50vh] md:h-[60vh] overflow-hidden">
+        <div className="relative h-[65vh] md:h-[80vh] overflow-hidden">
           <img src={product.detailImage || product.image} alt={product.name} className="w-full h-full object-cover" />
           <div className="absolute inset-0 hero-overlay" />
           <div className="absolute inset-0 flex items-center z-10">
