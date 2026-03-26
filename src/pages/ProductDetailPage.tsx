@@ -36,7 +36,7 @@ const ProductDetailPage = () => {
         <div className="relative h-[65vh] md:h-[80vh] overflow-hidden">
           <img src={product.detailImage || product.image} alt={product.name} className="w-full h-full object-cover" />
           <div className="absolute inset-0 hero-overlay" />
-          <div className="absolute inset-0 flex items-end pb-16 md:pb-24 z-10">
+          <div className="absolute inset-0 flex items-start pt-28 md:pt-32 z-10">
             <div className="container mx-auto px-4">
               <AnimatedSection>
                 <button
