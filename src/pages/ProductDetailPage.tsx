@@ -34,7 +34,7 @@ const ProductDetailPage = () => {
       {/* Hero Banner */}
       <section className="relative pt-20">
         <div className="relative h-[65vh] md:h-[75vh] overflow-hidden">
-          <img src={product.detailImage || product.image} alt={product.name} className="w-full h-full object-cover" style={{ objectPosition: "center 30%" }} loading="eager" />
+          <img src={product.detailImage || product.image} alt={product.name} className="w-full h-full object-contain" style={{ objectPosition: "center", backgroundColor: "hsl(var(--muted))" }} loading="eager" />
           <div className="absolute inset-0 hero-overlay" />
           <div className="absolute inset-0 flex items-start pt-24 z-10">
             <div className="container mx-auto px-4">
