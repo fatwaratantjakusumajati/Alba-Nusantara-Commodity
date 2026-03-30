@@ -2,14 +2,16 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { Globe, TrendingUp } from "lucide-react";
 
 const markets = [
-  { country: "USA", flag: "🇺🇸", region: "North America", x: 18, y: 40 },
-  { country: "Canada", flag: "🇨🇦", region: "North America", x: 17, y: 28 },
-  { country: "Taiwan", flag: "🇹🇼", region: "Asia Pacific", x: 75, y: 42 },
-  { country: "Australia", flag: "🇦🇺", region: "Asia Pacific", x: 82, y: 78 },
+  { country: "USA", flag: "🇺🇸", region: "North America", x: 175, y: 165 },
+  { country: "Canada", flag: "🇨🇦", region: "North America", x: 165, y: 115 },
+  { country: "Taiwan", flag: "🇹🇼", region: "Asia Pacific", x: 720, y: 185 },
+  { country: "Australia", flag: "🇦🇺", region: "Asia Pacific", x: 770, y: 340 },
 ];
 
+const indonesiaPos = { x: 690, y: 250 };
+
 const OurMarketsSection = () => (
-  <section className="section-padding bg-background" id="markets">
+  <section className="section-padding bg-muted/30" id="markets">
     <div className="container mx-auto">
       <AnimatedSection className="text-center mb-12">
         <span className="text-sm font-semibold text-accent uppercase tracking-widest">
@@ -23,100 +25,120 @@ const OurMarketsSection = () => (
 
       <AnimatedSection>
         <div className="max-w-6xl mx-auto">
-          {/* World Map */}
           <div className="relative rounded-2xl overflow-hidden border border-border bg-card" style={{ boxShadow: "var(--shadow-lg)" }}>
-            <div className="relative w-full" style={{ paddingBottom: "45%" }}>
+            <div className="relative w-full" style={{ paddingBottom: "48%" }}>
               <svg
-                viewBox="0 0 1000 450"
+                viewBox="0 0 960 460"
                 className="absolute inset-0 w-full h-full"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                {/* Ocean */}
-                <rect width="1000" height="450" fill="hsl(200, 30%, 95%)" />
-                
+                <defs>
+                  <radialGradient id="worldOcean" cx="50%" cy="50%" r="70%">
+                    <stop offset="0%" stopColor="hsl(210, 35%, 95%)" />
+                    <stop offset="100%" stopColor="hsl(210, 30%, 88%)" />
+                  </radialGradient>
+                  <filter id="continent-shadow">
+                    <feDropShadow dx="1" dy="2" stdDeviation="2" floodColor="hsl(0,0%,30%)" floodOpacity="0.1"/>
+                  </filter>
+                </defs>
+                <rect width="960" height="460" fill="url(#worldOcean)" />
+
                 {/* Grid */}
                 {[...Array(10)].map((_, i) => (
-                  <line key={`h${i}`} x1="0" y1={i * 50} x2="1000" y2={i * 50} stroke="hsl(200, 20%, 90%)" strokeWidth="0.5" />
+                  <line key={`h${i}`} x1="0" y1={i * 50} x2="960" y2={i * 50} stroke="hsl(210, 20%, 85%)" strokeWidth="0.3" />
                 ))}
                 {[...Array(20)].map((_, i) => (
-                  <line key={`v${i}`} x1={i * 50} y1="0" x2={i * 50} y2="450" stroke="hsl(200, 20%, 90%)" strokeWidth="0.5" />
+                  <line key={`v${i}`} x1={i * 50} y1="0" x2={i * 50} y2="460" stroke="hsl(210, 20%, 85%)" strokeWidth="0.3" />
                 ))}
 
-                {/* Simplified World Continents */}
+                {/* ===== WORLD CONTINENTS ===== */}
                 {/* North America */}
-                <path d="M80,50 L200,40 L250,80 L240,130 L270,160 L260,200 L220,230 L180,220 L150,250 L120,220 L100,180 L80,140 L60,100 Z"
-                  fill="hsl(145, 25%, 88%)" stroke="hsl(145, 30%, 70%)" strokeWidth="1" />
+                <path filter="url(#continent-shadow)" d="M60,45 L120,30 L180,35 L225,55 L240,90 L235,130 L250,155 L245,195 L225,220 L200,235 L170,225 L140,240 L120,225 L95,195 L80,155 L65,115 L55,80 Z"
+                  fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="1" strokeLinejoin="round" />
                 
+                {/* Central America */}
+                <path d="M175,235 L195,240 L205,260 L195,280 L180,275 L170,255 Z"
+                  fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="0.8" strokeLinejoin="round" />
+
                 {/* South America */}
-                <path d="M200,260 L240,250 L270,280 L280,330 L260,380 L230,410 L200,400 L180,360 L175,310 L185,280 Z"
-                  fill="hsl(145, 25%, 88%)" stroke="hsl(145, 30%, 70%)" strokeWidth="1" />
-                
+                <path filter="url(#continent-shadow)" d="M185,285 L215,275 L240,290 L250,325 L245,365 L230,400 L210,420 L190,410 L180,375 L175,335 L178,305 Z"
+                  fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="1" strokeLinejoin="round" />
+
                 {/* Europe */}
-                <path d="M420,50 L480,40 L520,60 L510,100 L490,120 L450,130 L430,110 L420,80 Z"
-                  fill="hsl(145, 25%, 88%)" stroke="hsl(145, 30%, 70%)" strokeWidth="1" />
+                <path filter="url(#continent-shadow)" d="M415,35 L445,28 L475,35 L490,55 L500,80 L495,105 L480,120 L455,125 L435,115 L420,95 L410,65 Z"
+                  fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="1" strokeLinejoin="round" />
                 
+                {/* UK / Scandinavia hints */}
+                <ellipse cx="420" cy="55" rx="8" ry="12" fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="0.6" />
+
                 {/* Africa */}
-                <path d="M430,150 L490,140 L520,170 L530,230 L520,300 L490,350 L460,340 L440,290 L430,230 L420,180 Z"
-                  fill="hsl(145, 25%, 88%)" stroke="hsl(145, 30%, 70%)" strokeWidth="1" />
-                
+                <path filter="url(#continent-shadow)" d="M430,140 L470,130 L505,145 L520,185 L525,235 L520,290 L505,335 L480,355 L455,345 L440,305 L430,250 L425,195 Z"
+                  fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="1" strokeLinejoin="round" />
+
                 {/* Asia */}
-                <path d="M530,40 L620,30 L700,50 L780,60 L800,100 L790,150 L750,180 L700,170 L650,180 L600,160 L560,130 L540,90 Z"
-                  fill="hsl(145, 25%, 88%)" stroke="hsl(145, 30%, 70%)" strokeWidth="1" />
+                <path filter="url(#continent-shadow)" d="M510,30 L570,22 L640,30 L710,45 L760,65 L780,95 L775,135 L755,165 L720,175 L680,170 L640,175 L600,160 L560,135 L530,100 L515,65 Z"
+                  fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="1" strokeLinejoin="round" />
                 
+                {/* Middle East */}
+                <path d="M520,130 L545,120 L560,140 L555,160 L535,165 L520,155 Z"
+                  fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="0.8" />
+
+                {/* India */}
+                <path d="M600,165 L625,150 L645,175 L635,215 L615,240 L600,225 L595,195 Z"
+                  fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="0.8" />
+
                 {/* Southeast Asia / Indonesia */}
-                <path d="M680,200 L730,190 L770,200 L790,220 L780,240 L740,250 L700,240 L680,220 Z"
-                  fill="hsl(145, 35%, 75%)" stroke="hsl(145, 35%, 55%)" strokeWidth="1.5" />
-                {/* Indonesia label */}
-                <text x="730" y="215" textAnchor="middle" fontSize="11" fontWeight="700" fill="hsl(145, 35%, 30%)">
+                <path d="M670,210 L700,200 L730,205 L755,215 L760,235 L745,250 L715,255 L690,248 L675,235 Z"
+                  fill="hsl(145, 40%, 72%)" stroke="hsl(145, 40%, 50%)" strokeWidth="1.5" strokeLinejoin="round" />
+                <text x="715" y="228" textAnchor="middle" fontSize="10" fontWeight="700" fill="hsl(145, 40%, 25%)">
                   Indonesia
                 </text>
-                
+
                 {/* Australia */}
-                <path d="M760,300 L830,280 L880,300 L900,340 L880,380 L830,400 L780,380 L760,340 Z"
-                  fill="hsl(145, 25%, 88%)" stroke="hsl(145, 30%, 70%)" strokeWidth="1" />
+                <path filter="url(#continent-shadow)" d="M730,295 L780,280 L830,290 L860,315 L855,355 L835,385 L800,395 L765,380 L740,350 L730,320 Z"
+                  fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="1" strokeLinejoin="round" />
+
+                {/* Japan */}
+                <path d="M760,80 L770,70 L778,85 L775,105 L765,110 L758,95 Z"
+                  fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="0.7" />
+
+                {/* Taiwan */}
+                <ellipse cx="738" cy="155" rx="5" ry="8" fill="hsl(145, 22%, 85%)" stroke="hsl(145, 25%, 65%)" strokeWidth="0.7" />
 
                 {/* Export route lines from Indonesia */}
-                {markets.map((m, i) => {
-                  const cx = m.x * 10;
-                  const cy = m.y * 4.5;
-                  return (
-                    <line
-                      key={`line-${m.country}`}
-                      x1="730" y1="220"
-                      x2={cx} y2={cy}
-                      stroke="hsl(145, 45%, 38%)"
-                      strokeWidth="1.5"
-                      strokeDasharray="6 4"
-                      opacity="0.4"
-                    >
-                      <animate attributeName="stroke-dashoffset" values="0;-20" dur="2s" begin={`${i * 0.5}s`} repeatCount="indefinite" />
-                    </line>
-                  );
-                })}
+                {markets.map((m, i) => (
+                  <line
+                    key={`route-${m.country}`}
+                    x1={indonesiaPos.x} y1={indonesiaPos.y}
+                    x2={m.x} y2={m.y}
+                    stroke="hsl(145, 45%, 38%)"
+                    strokeWidth="1.5"
+                    strokeDasharray="6 4"
+                    opacity="0.35"
+                  >
+                    <animate attributeName="stroke-dashoffset" values="0;-20" dur="2s" begin={`${i * 0.5}s`} repeatCount="indefinite" />
+                  </line>
+                ))}
 
                 {/* Market pins */}
-                {markets.map((m, i) => {
-                  const cx = m.x * 10;
-                  const cy = m.y * 4.5;
-                  return (
-                    <g key={m.country}>
-                      <circle cx={cx} cy={cy} r="10" fill="hsl(30, 55%, 38%)" opacity="0.15">
-                        <animate attributeName="r" values="8;16;8" dur="2s" begin={`${i * 0.4}s`} repeatCount="indefinite" />
-                        <animate attributeName="opacity" values="0.2;0;0.2" dur="2s" begin={`${i * 0.4}s`} repeatCount="indefinite" />
-                      </circle>
-                      <circle cx={cx} cy={cy} r="6" fill="hsl(30, 55%, 38%)" stroke="white" strokeWidth="2" />
-                      <text x={cx} y={cy - 14} textAnchor="middle" fontSize="11" fontWeight="600" fill="hsl(30, 30%, 12%)">
-                        {m.flag} {m.country}
-                      </text>
-                    </g>
-                  );
-                })}
+                {markets.map((m, i) => (
+                  <g key={m.country}>
+                    <circle cx={m.x} cy={m.y} r="10" fill="hsl(30, 55%, 38%)" opacity="0.12">
+                      <animate attributeName="r" values="8;16;8" dur="2.5s" begin={`${i * 0.4}s`} repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.18;0;0.18" dur="2.5s" begin={`${i * 0.4}s`} repeatCount="indefinite" />
+                    </circle>
+                    <circle cx={m.x} cy={m.y} r="5.5" fill="hsl(30, 55%, 38%)" stroke="white" strokeWidth="2" />
+                    <text x={m.x} y={m.y - 13} textAnchor="middle" fontSize="10" fontWeight="700" fill="hsl(30, 30%, 12%)">
+                      {m.flag} {m.country}
+                    </text>
+                  </g>
+                ))}
 
                 {/* Indonesia origin pin */}
-                <circle cx="730" cy="220" r="8" fill="hsl(145, 45%, 38%)" stroke="white" strokeWidth="2.5" />
-                <circle cx="730" cy="220" r="14" fill="none" stroke="hsl(145, 45%, 38%)" strokeWidth="1.5" opacity="0.3">
+                <circle cx={indonesiaPos.x} cy={indonesiaPos.y} r="7" fill="hsl(145, 45%, 38%)" stroke="white" strokeWidth="2.5" />
+                <circle cx={indonesiaPos.x} cy={indonesiaPos.y} r="14" fill="none" stroke="hsl(145, 45%, 38%)" strokeWidth="1.2" opacity="0.3">
                   <animate attributeName="r" values="10;22;10" dur="2s" repeatCount="indefinite" />
-                  <animate attributeName="opacity" values="0.4;0;0.4" dur="2s" repeatCount="indefinite" />
+                  <animate attributeName="opacity" values="0.35;0;0.35" dur="2s" repeatCount="indefinite" />
                 </circle>
               </svg>
             </div>

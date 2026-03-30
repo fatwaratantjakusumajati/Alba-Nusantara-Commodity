@@ -2,13 +2,13 @@ import AnimatedSection from "@/components/AnimatedSection";
 import { MapPin } from "lucide-react";
 
 const locationPins = [
-  { name: "West Kalimantan", x: 28, y: 48, products: ["Bird Nest"] },
-  { name: "East Java", x: 48, y: 72, products: ["Bird Nest", "Cloves", "Cocoa", "Essential Oil"] },
-  { name: "Bali", x: 52, y: 76, products: ["Cloves"] },
-  { name: "Central Sulawesi", x: 55, y: 42, products: ["Bird Nest"] },
-  { name: "North Sulawesi", x: 58, y: 30, products: ["Cloves"] },
-  { name: "West Nusa Tenggara", x: 53, y: 82, products: ["Bird Nest"] },
-  { name: "East Nusa Tenggara", x: 58, y: 85, products: ["Cloves"] },
+  { name: "West Kalimantan", x: 315, y: 175, products: ["Bird Nest"] },
+  { name: "East Java", x: 420, y: 310, products: ["Bird Nest", "Cloves", "Cocoa", "Essential Oil"] },
+  { name: "Bali", x: 460, y: 320, products: ["Cloves"] },
+  { name: "Central Sulawesi", x: 540, y: 180, products: ["Bird Nest"] },
+  { name: "North Sulawesi", x: 560, y: 120, products: ["Cloves"] },
+  { name: "West Nusa Tenggara", x: 490, y: 340, products: ["Bird Nest"] },
+  { name: "East Nusa Tenggara", x: 560, y: 350, products: ["Cloves"] },
 ];
 
 const productLegend = [
@@ -19,7 +19,7 @@ const productLegend = [
 ];
 
 const OurLocationSection = () => (
-  <section className="section-padding bg-muted/30" id="location">
+  <section className="section-padding bg-background" id="location">
     <div className="container mx-auto">
       <AnimatedSection className="text-center mb-12">
         <span className="text-sm font-semibold text-accent uppercase tracking-widest">
@@ -33,72 +33,91 @@ const OurLocationSection = () => (
 
       <AnimatedSection>
         <div className="max-w-6xl mx-auto">
-          {/* Map Container */}
           <div className="relative rounded-2xl overflow-hidden border border-border bg-card" style={{ boxShadow: "var(--shadow-lg)" }}>
-            {/* Indonesia Map SVG */}
-            <div className="relative w-full" style={{ paddingBottom: "45%" }}>
+            <div className="relative w-full" style={{ paddingBottom: "50%" }}>
               <svg
-                viewBox="0 0 1000 450"
+                viewBox="0 0 900 450"
                 className="absolute inset-0 w-full h-full"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                {/* Ocean background */}
-                <rect width="1000" height="450" fill="hsl(200, 30%, 95%)" />
-                
-                {/* Grid lines */}
-                {[...Array(10)].map((_, i) => (
-                  <line key={`h${i}`} x1="0" y1={i * 50} x2="1000" y2={i * 50} stroke="hsl(200, 20%, 90%)" strokeWidth="0.5" />
+                {/* Ocean */}
+                <defs>
+                  <radialGradient id="ocean" cx="50%" cy="50%" r="70%">
+                    <stop offset="0%" stopColor="hsl(200, 40%, 96%)" />
+                    <stop offset="100%" stopColor="hsl(200, 35%, 90%)" />
+                  </radialGradient>
+                  <filter id="land-shadow" x="-2%" y="-2%" width="104%" height="104%">
+                    <feDropShadow dx="1" dy="2" stdDeviation="2" floodColor="hsl(145,20%,40%)" floodOpacity="0.15"/>
+                  </filter>
+                </defs>
+                <rect width="900" height="450" fill="url(#ocean)" />
+
+                {/* Grid */}
+                {[...Array(9)].map((_, i) => (
+                  <line key={`h${i}`} x1="0" y1={i * 50} x2="900" y2={i * 50} stroke="hsl(200, 20%, 88%)" strokeWidth="0.4" />
                 ))}
-                {[...Array(20)].map((_, i) => (
-                  <line key={`v${i}`} x1={i * 50} y1="0" x2={i * 50} y2="450" stroke="hsl(200, 20%, 90%)" strokeWidth="0.5" />
+                {[...Array(18)].map((_, i) => (
+                  <line key={`v${i}`} x1={i * 50} y1="0" x2={i * 50} y2="450" stroke="hsl(200, 20%, 88%)" strokeWidth="0.4" />
                 ))}
 
-                {/* Simplified Indonesia Islands */}
+                {/* ===== INDONESIA ISLANDS (detailed) ===== */}
                 {/* Sumatra */}
-                <path d="M120,120 L160,100 L200,130 L220,180 L230,240 L210,300 L180,330 L140,310 L120,260 L100,200 L110,150 Z" 
-                  fill="hsl(145, 35%, 85%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.5" />
-                
-                {/* Kalimantan */}
-                <path d="M260,80 L320,60 L380,80 L400,130 L390,200 L360,250 L310,270 L270,240 L250,180 L240,120 Z"
-                  fill="hsl(145, 35%, 85%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.5" />
-                
-                {/* Java */}
-                <path d="M250,310 L310,295 L370,290 L430,295 L480,300 L520,310 L500,330 L440,335 L370,330 L300,325 L260,320 Z"
-                  fill="hsl(145, 35%, 85%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.5" />
-                
-                {/* Sulawesi */}
-                <path d="M520,100 L550,80 L580,100 L590,150 L610,130 L640,140 L630,180 L600,200 L580,250 L560,280 L540,260 L550,220 L530,200 L520,150 Z"
-                  fill="hsl(145, 35%, 85%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.5" />
-                
-                {/* Bali & NTB & NTT */}
-                <ellipse cx="530" cy="340" rx="20" ry="10" fill="hsl(145, 35%, 85%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.5" />
-                <ellipse cx="570" cy="350" rx="25" ry="10" fill="hsl(145, 35%, 85%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.5" />
-                <ellipse cx="620" cy="355" rx="30" ry="10" fill="hsl(145, 35%, 85%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.5" />
-                
-                {/* Papua */}
-                <path d="M780,120 L830,100 L880,110 L920,140 L900,200 L860,250 L820,240 L790,200 L770,160 Z"
-                  fill="hsl(145, 35%, 85%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.5" />
+                <path filter="url(#land-shadow)" d="M60,100 L100,75 L140,80 L165,110 L180,145 L195,190 L205,240 L200,285 L185,320 L160,345 L130,340 L105,310 L85,270 L70,225 L60,175 L55,135 Z"
+                  fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.2" strokeLinejoin="round" />
+                <text x="130" y="210" textAnchor="middle" fontSize="11" fill="hsl(145, 30%, 45%)" fontWeight="500" opacity="0.7">Sumatra</text>
 
-                {/* Location pins with pulse animation */}
-                {locationPins.map((pin, i) => {
-                  const cx = pin.x * 10;
-                  const cy = pin.y * 5;
-                  return (
-                    <g key={pin.name}>
-                      {/* Pulse ring */}
-                      <circle cx={cx} cy={cy} r="12" fill="hsl(145, 45%, 38%)" opacity="0.15">
-                        <animate attributeName="r" values="8;18;8" dur="2s" begin={`${i * 0.3}s`} repeatCount="indefinite" />
-                        <animate attributeName="opacity" values="0.2;0;0.2" dur="2s" begin={`${i * 0.3}s`} repeatCount="indefinite" />
-                      </circle>
-                      {/* Pin dot */}
-                      <circle cx={cx} cy={cy} r="6" fill="hsl(145, 45%, 38%)" stroke="white" strokeWidth="2" />
-                      {/* Label */}
-                      <text x={cx} y={cy - 14} textAnchor="middle" fontSize="10" fontWeight="600" fill="hsl(30, 30%, 12%)">
-                        {pin.name}
-                      </text>
-                    </g>
-                  );
-                })}
+                {/* Kalimantan */}
+                <path filter="url(#land-shadow)" d="M250,60 L290,45 L340,50 L380,70 L400,105 L405,145 L395,195 L375,235 L345,260 L310,270 L275,255 L255,220 L240,175 L235,130 L240,90 Z"
+                  fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.2" strokeLinejoin="round" />
+                <text x="320" y="155" textAnchor="middle" fontSize="12" fill="hsl(145, 30%, 45%)" fontWeight="500" opacity="0.7">Kalimantan</text>
+
+                {/* Java */}
+                <path filter="url(#land-shadow)" d="M215,295 L255,285 L300,280 L345,278 L385,282 L420,290 L450,300 L470,308 L455,325 L420,330 L380,328 L340,325 L300,322 L260,318 L230,310 Z"
+                  fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.2" strokeLinejoin="round" />
+                <text x="345" y="305" textAnchor="middle" fontSize="10" fill="hsl(145, 30%, 45%)" fontWeight="500" opacity="0.7">Java</text>
+
+                {/* Sulawesi */}
+                <path filter="url(#land-shadow)" d="M490,75 L520,60 L550,70 L560,100 L565,135 L575,120 L600,110 L625,125 L618,160 L595,185 L575,215 L560,255 L545,280 L530,265 L535,230 L520,205 L510,175 L500,140 L495,105 Z"
+                  fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.2" strokeLinejoin="round" />
+                <text x="555" y="200" textAnchor="middle" fontSize="10" fill="hsl(145, 30%, 45%)" fontWeight="500" opacity="0.7">Sulawesi</text>
+
+                {/* Bali */}
+                <ellipse cx="478" cy="318" rx="12" ry="8" fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1" />
+
+                {/* Lombok / NTB */}
+                <ellipse cx="500" cy="335" rx="16" ry="8" fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1" />
+
+                {/* Sumbawa */}
+                <ellipse cx="530" cy="340" rx="20" ry="8" fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1" />
+
+                {/* Flores / NTT */}
+                <ellipse cx="575" cy="345" rx="25" ry="7" fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1" />
+
+                {/* Timor */}
+                <ellipse cx="615" cy="355" rx="18" ry="7" fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1" />
+
+                {/* Maluku */}
+                <ellipse cx="660" cy="190" rx="14" ry="20" fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1" />
+                <ellipse cx="680" cy="250" rx="12" ry="18" fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1" />
+
+                {/* Papua */}
+                <path filter="url(#land-shadow)" d="M720,100 L760,85 L810,90 L850,110 L865,145 L855,190 L835,230 L805,250 L775,240 L750,210 L735,170 L725,135 Z"
+                  fill="hsl(145, 30%, 82%)" stroke="hsl(145, 35%, 60%)" strokeWidth="1.2" strokeLinejoin="round" />
+                <text x="790" y="165" textAnchor="middle" fontSize="11" fill="hsl(145, 30%, 45%)" fontWeight="500" opacity="0.7">Papua</text>
+
+                {/* Location pins */}
+                {locationPins.map((pin, i) => (
+                  <g key={pin.name}>
+                    <circle cx={pin.x} cy={pin.y} r="12" fill="hsl(30, 55%, 38%)" opacity="0.12">
+                      <animate attributeName="r" values="8;18;8" dur="2.5s" begin={`${i * 0.3}s`} repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="0.18;0;0.18" dur="2.5s" begin={`${i * 0.3}s`} repeatCount="indefinite" />
+                    </circle>
+                    <circle cx={pin.x} cy={pin.y} r="5" fill="hsl(30, 55%, 38%)" stroke="white" strokeWidth="2" />
+                    <text x={pin.x} y={pin.y - 12} textAnchor="middle" fontSize="9" fontWeight="700" fill="hsl(30, 30%, 15%)">
+                      {pin.name}
+                    </text>
+                  </g>
+                ))}
               </svg>
             </div>
 
@@ -115,7 +134,7 @@ const OurLocationSection = () => (
             </div>
           </div>
 
-          {/* Product Location Cards below map */}
+          {/* Product Location Cards */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mt-8">
             {productLegend.map((loc, i) => (
               <AnimatedSection key={loc.name} delay={i * 0.1}>
