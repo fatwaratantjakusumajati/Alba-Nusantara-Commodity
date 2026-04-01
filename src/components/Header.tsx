@@ -1,13 +1,14 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { useLanguage } from "@/contexts/LanguageContext";
 import logo from "@/assets/logo.png";
 
-const navItems = [
-  { label: "Home", href: "home" },
-  { label: "About Us", href: "about" },
-  { label: "Products", href: "products" },
-  { label: "Contact", href: "contact" },
+const navKeys = [
+  { key: "nav.home", href: "home" },
+  { key: "nav.about", href: "about" },
+  { key: "nav.products", href: "products" },
+  { key: "nav.contact", href: "contact" },
 ];
 
 const Header = () => {
@@ -16,6 +17,7 @@ const Header = () => {
   const [activeSection, setActiveSection] = useState("home");
   const navigate = useNavigate();
   const location = useLocation();
+  const { lang, toggleLang, t } = useLanguage();
 
   const isHome = location.pathname === "/";
 
@@ -23,7 +25,7 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
       if (!isHome) return;
-      const sections = navItems.map((item) => item.href);
+      const sections = navKeys.map((item) => item.href);
       for (let i = sections.length - 1; i >= 0; i--) {
         const el = document.getElementById(sections[i]);
         if (el && el.getBoundingClientRect().top <= 120) {
@@ -76,42 +78,69 @@ const Header = () => {
           />
         </button>
 
-        <nav className="hidden lg:flex items-center gap-1">
-          {navItems.map((item) => (
-            <button
-              key={item.href}
-              onClick={() => scrollTo(item.href)}
-              className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
-                activeSection === item.href && isHome
-                  ? showTransparent
-                    ? "text-primary-foreground bg-primary-foreground/15"
-                    : "text-green-accent bg-green-accent/10"
-                  : showTransparent
-                  ? "text-primary-foreground/75 hover:text-primary-foreground hover:bg-primary-foreground/10"
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
-              }`}
-            >
-              {item.label}
-            </button>
-          ))}
-        </nav>
+        <div className="hidden lg:flex items-center gap-1">
+          <nav className="flex items-center gap-1">
+            {navKeys.map((item) => (
+              <button
+                key={item.href}
+                onClick={() => scrollTo(item.href)}
+                className={`px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+                  activeSection === item.href && isHome
+                    ? showTransparent
+                      ? "text-primary-foreground bg-primary-foreground/15"
+                      : "text-green-accent bg-green-accent/10"
+                    : showTransparent
+                    ? "text-primary-foreground/75 hover:text-primary-foreground hover:bg-primary-foreground/10"
+                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                }`}
+              >
+                {t(item.key)}
+              </button>
+            ))}
+          </nav>
 
-        <button
-          className="lg:hidden p-2 rounded-md"
-          onClick={() => setIsMobileOpen(!isMobileOpen)}
-        >
-          {isMobileOpen ? (
-            <X className={`w-6 h-6 ${showTransparent ? "text-primary-foreground" : "text-foreground"}`} />
-          ) : (
-            <Menu className={`w-6 h-6 ${showTransparent ? "text-primary-foreground" : "text-foreground"}`} />
-          )}
-        </button>
+          <button
+            onClick={toggleLang}
+            className={`ml-2 flex items-center gap-1.5 px-3 py-2 text-sm font-medium rounded-md transition-colors ${
+              showTransparent
+                ? "text-primary-foreground/75 hover:text-primary-foreground hover:bg-primary-foreground/10 border border-primary-foreground/20"
+                : "text-muted-foreground hover:text-foreground hover:bg-muted border border-border"
+            }`}
+          >
+            <Globe className="w-4 h-4" />
+            {lang === "id" ? "EN" : "ID"}
+          </button>
+        </div>
+
+        <div className="lg:hidden flex items-center gap-2">
+          <button
+            onClick={toggleLang}
+            className={`flex items-center gap-1 px-2.5 py-1.5 text-xs font-medium rounded-md transition-colors ${
+              showTransparent
+                ? "text-primary-foreground/80 border border-primary-foreground/20"
+                : "text-muted-foreground border border-border"
+            }`}
+          >
+            <Globe className="w-3.5 h-3.5" />
+            {lang === "id" ? "EN" : "ID"}
+          </button>
+          <button
+            className="p-2 rounded-md"
+            onClick={() => setIsMobileOpen(!isMobileOpen)}
+          >
+            {isMobileOpen ? (
+              <X className={`w-6 h-6 ${showTransparent ? "text-primary-foreground" : "text-foreground"}`} />
+            ) : (
+              <Menu className={`w-6 h-6 ${showTransparent ? "text-primary-foreground" : "text-foreground"}`} />
+            )}
+          </button>
+        </div>
       </div>
 
       {isMobileOpen && (
         <div className="lg:hidden bg-card/98 backdrop-blur-lg border-b border-border">
           <nav className="container mx-auto py-4 px-4 flex flex-col gap-1">
-            {navItems.map((item) => (
+            {navKeys.map((item) => (
               <button
                 key={item.href}
                 onClick={() => scrollTo(item.href)}
@@ -121,7 +150,7 @@ const Header = () => {
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
                 }`}
               >
-                {item.label}
+                {t(item.key)}
               </button>
             ))}
           </nav>

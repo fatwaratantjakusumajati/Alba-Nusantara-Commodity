@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import hero1 from "@/assets/hero1.jpg";
 import hero2 from "@/assets/hero2.jpg";
 import hero3 from "@/assets/hero3.jpg";
@@ -14,6 +15,7 @@ const slides = [
 
 const HeroSection = () => {
   const [current, setCurrent] = useState(0);
+  const { t } = useLanguage();
 
   const next = useCallback(() => setCurrent((c) => (c + 1) % slides.length), []);
   const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length);
@@ -51,21 +53,21 @@ const HeroSection = () => {
           <div className="max-w-3xl">
             <div className="inline-block px-4 py-1.5 rounded-full border border-primary-foreground/25 bg-primary-foreground/10 backdrop-blur-sm mb-6">
               <span className="text-sm font-medium text-primary-foreground/90">
-                Premium Natural Products from Indonesia
+                {t("hero.badge")}
               </span>
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-primary-foreground leading-[1.1] tracking-tight mb-6">
-              Kekayaan Alam{" "}
-              <span className="text-gradient">Nusantara</span>
+              {t("hero.title1")}{" "}
+              <span className="text-gradient">{t("hero.title2")}</span>
             </h1>
             <p className="text-lg md:text-xl text-primary-foreground/80 max-w-xl mb-8 leading-relaxed">
-              Menghadirkan produk alam premium — Essential Oil, Bird Nest, Cocoa Beans, dan Clove — dengan kualitas terbaik dari bumi Indonesia.
+              {t("hero.desc")}
             </p>
             <button
               onClick={scrollToProducts}
               className="gradient-accent text-primary-foreground px-8 py-4 rounded-lg font-semibold text-base hover:opacity-90 transition-opacity shadow-lg"
             >
-              Lihat Produk
+              {t("hero.cta")}
             </button>
           </div>
         </div>
