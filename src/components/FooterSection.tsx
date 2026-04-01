@@ -1,7 +1,7 @@
 import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import logo from "@/assets/logo.png";
 
-const quickLinks = ["About Us", "Products", "Contact"];
 const socialIcons = [
   { icon: Facebook, label: "Facebook" },
   { icon: Instagram, label: "Instagram" },
@@ -10,13 +10,16 @@ const socialIcons = [
 ];
 
 const FooterSection = () => {
-  const scrollTo = (id: string) => {
-    const map: Record<string, string> = {
-      "About Us": "about",
-      Products: "products",
-      Contact: "contact",
-    };
-    const el = document.getElementById(map[id] || id);
+  const { t } = useLanguage();
+
+  const quickLinks = [t("nav.about"), t("nav.products"), t("nav.contact")];
+
+  const scrollTo = (label: string) => {
+    const map: Record<string, string> = {};
+    map[t("nav.about")] = "about";
+    map[t("nav.products")] = "products";
+    map[t("nav.contact")] = "contact";
+    const el = document.getElementById(map[label] || label);
     if (el) {
       const y = el.getBoundingClientRect().top + window.scrollY - 80;
       window.scrollTo({ top: y, behavior: "smooth" });
@@ -32,12 +35,12 @@ const FooterSection = () => {
               <img src={logo} alt="Alba Nusantara Commodity" className="h-12 w-auto brightness-0 invert" />
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              Perusahaan terkemuka dalam pengolahan dan ekspor produk alam premium Indonesia ke pasar global.
+              {t("footer.desc")}
             </p>
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-primary-foreground/90">Quick Links</h4>
+            <h4 className="font-bold mb-4 text-primary-foreground/90">{t("footer.quicklinks")}</h4>
             <div className="space-y-2.5">
               {quickLinks.map((link) => (
                 <button
@@ -52,7 +55,7 @@ const FooterSection = () => {
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-primary-foreground/90">Kontak</h4>
+            <h4 className="font-bold mb-4 text-primary-foreground/90">{t("footer.contact")}</h4>
             <div className="space-y-3">
               <div className="flex gap-3 text-sm text-primary-foreground/70">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
@@ -70,7 +73,7 @@ const FooterSection = () => {
           </div>
 
           <div>
-            <h4 className="font-bold mb-4 text-primary-foreground/90">Ikuti Kami</h4>
+            <h4 className="font-bold mb-4 text-primary-foreground/90">{t("footer.follow")}</h4>
             <div className="flex gap-3">
               {socialIcons.map(({ icon: Icon, label }) => (
                 <a
