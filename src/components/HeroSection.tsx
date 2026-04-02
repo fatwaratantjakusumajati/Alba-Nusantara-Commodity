@@ -7,7 +7,6 @@ import hero3 from "@/assets/hero3.jpg";
 import hero4 from "@/assets/hero4.jpg";
 
 const slides = [
-  { image: hero4, alt: "Premium bird nest product" },
   { image: hero1, alt: "Tropical plantation" },
   { image: hero2, alt: "Spice farm aerial view" },
   { image: hero3, alt: "Essential oil production" },
