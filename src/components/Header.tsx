@@ -108,7 +108,7 @@ const Header = () => {
             }`}
           >
             <Globe className="w-4 h-4" />
-            {lang === "id" ? "EN" : "ID"}
+            {lang === "id" ? "ID" : "EN"}
           </button>
         </div>
 
@@ -122,7 +122,7 @@ const Header = () => {
             }`}
           >
             <Globe className="w-3.5 h-3.5" />
-            {lang === "id" ? "EN" : "ID"}
+            {lang === "id" ? "ID" : "EN"}
           </button>
           <button
             className="p-2 rounded-md"
