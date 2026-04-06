@@ -1,4 +1,4 @@
-import { Shield, Lightbulb, Users, Award, Leaf, Heart } from "lucide-react";
+import { Shield, Award, Users, Heart } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -6,12 +6,10 @@ const CoreValuesSection = () => {
   const { t } = useLanguage();
 
   const values = [
-    { icon: Leaf, title: t("cv.sustainability"), desc: t("cv.sustainability.desc") },
-    { icon: Award, title: t("cv.quality"), desc: t("cv.quality.desc") },
     { icon: Shield, title: t("cv.integrity"), desc: t("cv.integrity.desc") },
-    { icon: Lightbulb, title: t("cv.innovation"), desc: t("cv.innovation.desc") },
-    { icon: Users, title: t("cv.empowerment"), desc: t("cv.empowerment.desc") },
-    { icon: Heart, title: t("cv.dedication"), desc: t("cv.dedication.desc") },
+    { icon: Award, title: t("cv.quality"), desc: t("cv.quality.desc") },
+    { icon: Users, title: t("cv.partnership"), desc: t("cv.partnership.desc") },
+    { icon: Heart, title: t("cv.client"), desc: t("cv.client.desc") },
   ];
 
   return (
