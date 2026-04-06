@@ -10,7 +10,6 @@ const VisionMissionSection = () => {
     t("vm.mission.2"),
     t("vm.mission.3"),
     t("vm.mission.4"),
-    t("vm.mission.5"),
   ];
 
   return (
