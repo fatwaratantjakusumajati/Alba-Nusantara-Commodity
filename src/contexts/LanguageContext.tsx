@@ -121,7 +121,7 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Our Markets
   "mkt.label": { id: "Jangkauan Global", en: "Global Reach" },
-  "mkt.title": { id: "Pasar Kami", en: "Our Markets" },
+  "mkt.title": { id: "Pasar Kami Saat Ini", en: "Our Current Markets" },
   "mkt.subtitle": { id: "Produk kami telah dipercaya dan diekspor ke berbagai negara di seluruh dunia", en: "Our products are trusted and exported to various countries around the world" },
   "mkt.countries": { id: "4+ Negara", en: "4+ Countries" },
   "mkt.growing": { id: "Kehadiran Global yang Berkembang", en: "Growing Global Presence" },
