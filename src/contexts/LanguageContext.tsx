@@ -55,29 +55,25 @@ const translations: Record<string, Record<Language, string>> = {
   "vm.subtitle": { id: "Fondasi yang memandu setiap langkah kami menuju keunggulan", en: "The foundation that guides every step towards excellence" },
   "vm.vision.title": { id: "Visi", en: "Vision" },
   "vm.vision.desc": {
-    id: "Menjadi perusahaan terdepan di Asia Tenggara dalam pengolahan dan distribusi produk alam premium yang diakui secara global atas kualitas, keberlanjutan, dan kontribusi positif bagi masyarakat dan lingkungan.",
-    en: "To become the leading company in Southeast Asia in processing and distributing premium natural products, globally recognized for quality, sustainability, and positive contributions to communities and the environment.",
+    id: "Menjadi mitra global terpercaya untuk komoditas Indonesia dengan menghubungkan sumber daya alam Nusantara ke dunia secara bertanggung jawab.",
+    en: "To become a trusted global partner for Indonesian commodities by responsibly connecting Nusantara's natural resources with the world.",
   },
   "vm.mission.title": { id: "Misi", en: "Mission" },
   "vm.mission.1": {
-    id: "Menghasilkan produk alam berkualitas premium dengan standar ekspor internasional",
-    en: "Produce premium quality natural products with international export standards",
+    id: "Menyediakan dan mengirimkan komoditas Indonesia berkualitas tinggi yang memenuhi standar internasional",
+    en: "To source and deliver high-quality Indonesian commodities that meet international standards",
   },
   "vm.mission.2": {
-    id: "Memberdayakan petani lokal melalui kemitraan yang adil dan berkelanjutan",
-    en: "Empower local farmers through fair and sustainable partnerships",
+    id: "Membangun kemitraan yang transparan, andal, dan jangka panjang di seluruh rantai pasok",
+    en: "To build transparent, reliable, and long-term partnerships across the supply chain",
   },
   "vm.mission.3": {
-    id: "Menerapkan teknologi pengolahan ramah lingkungan yang menjaga kelestarian alam",
-    en: "Implement environmentally friendly processing technology that preserves nature",
+    id: "Memberdayakan produsen lokal melalui kolaborasi yang adil dan berkelanjutan",
+    en: "To empower local producers through fair and sustainable collaboration",
   },
   "vm.mission.4": {
-    id: "Memperluas jaringan distribusi global untuk produk unggulan Indonesia",
-    en: "Expand global distribution network for Indonesia's flagship products",
-  },
-  "vm.mission.5": {
-    id: "Berkontribusi pada peningkatan ekonomi masyarakat pedesaan Indonesia",
-    en: "Contribute to improving the economy of rural Indonesian communities",
+    id: "Memperkuat kehadiran dan reputasi global produk alam Indonesia",
+    en: "To strengthen the global presence and reputation of Indonesian natural products",
   },
 
   // Core Values
