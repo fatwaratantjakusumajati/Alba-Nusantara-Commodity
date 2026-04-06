@@ -23,7 +23,7 @@ const CoreValuesSection = () => {
           <p className="section-subtitle">{t("cv.subtitle")}</p>
         </AnimatedSection>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((v, i) => (
             <AnimatedSection key={v.title} delay={i * 0.1}>
               <div className="card-corporate group text-center h-full">
