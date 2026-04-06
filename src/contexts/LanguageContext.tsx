@@ -38,12 +38,12 @@ const translations: Record<string, Record<Language, string>> = {
   "about.title": { id: "Produk Alam Premium dari Indonesia", en: "Premium Natural Products from Indonesia" },
   "about.experience": { id: "Tahun Pengalaman", en: "Years of Experience" },
   "about.p1": {
-    id: "NusaNature adalah perusahaan yang berfokus pada pengolahan dan distribusi produk alam premium Indonesia. Didirikan pada tahun 2009, kami berkomitmen menghadirkan kualitas terbaik dari kekayaan alam Nusantara — mulai dari Essential Oil, Bird Nest, Cocoa Beans, hingga Clove — untuk pasar domestik dan internasional.",
-    en: "NusaNature is a company focused on processing and distributing premium Indonesian natural products. Founded in 2009, we are committed to delivering the finest quality from the natural wealth of the archipelago — from Essential Oil, Bird Nest, Cocoa Beans, to Clove — for domestic and international markets.",
+    id: "ALBA NUSANTARA COMMODITY (ALNC) adalah perusahaan sourcing dan perdagangan komoditas Indonesia yang berkomitmen menghadirkan produk pertanian dan alam premium dari jantung Nusantara ke pasar domestik dan global. Dibangun di atas kemitraan lokal yang kuat dan rasa hormat mendalam terhadap sumber daya alam Indonesia, ALNC berperan sebagai jembatan antara produsen terpercaya dan pembeli yang mencari kualitas konsisten, transparansi, dan keandalan.",
+    en: "ALBA NUSANTARA COMMODITY (ALNC) is an Indonesian commodity sourcing and trading company committed to delivering premium agricultural and natural products from the heart of the archipelago to domestic and global markets. Built on strong local partnerships and deep respect for Indonesia's natural resources, ALNC serves as a bridge between trusted producers and buyers seeking consistent quality, transparency, and reliability.",
   },
   "about.p2": {
-    id: "Dengan fasilitas pengolahan modern dan tim ahli berpengalaman, kami memastikan setiap produk melewati proses quality control ketat untuk memenuhi standar ekspor tertinggi. Sertifikasi ISO 22000 dan HACCP menjadi bukti komitmen kami terhadap kualitas.",
-    en: "With modern processing facilities and an experienced team of experts, we ensure every product goes through strict quality control processes to meet the highest export standards. ISO 22000 and HACCP certifications are proof of our commitment to quality.",
+    id: "Di ALNC, kami percaya bahwa komoditas lebih dari sekadar produk — mereka adalah hasil dari kerja sama antara manusia, tanah, dan warisan budaya. Peran kami adalah memastikan nilai-nilai ini tetap terjaga sambil memenuhi standar pasar modern dan permintaan global.",
+    en: "At ALNC, we believe commodities are more than products — they are the result of people, land, and heritage working together. Our role is to ensure these values are preserved while meeting modern market standards and global demand.",
   },
   "about.stat.employees": { id: "Karyawan", en: "Employees" },
   "about.stat.countries": { id: "Negara Ekspor", en: "Export Countries" },
