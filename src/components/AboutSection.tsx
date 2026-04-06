@@ -37,18 +37,6 @@ const AboutSection = () => {
             <p className="text-muted-foreground leading-relaxed mb-6">
               {t("about.p2")}
             </p>
-            <div className="grid grid-cols-3 gap-6">
-              {[
-                { value: "200+", label: t("about.stat.employees") },
-                { value: "30+", label: t("about.stat.countries") },
-                { value: "500+", label: t("about.stat.partners") },
-              ].map((stat) => (
-                <div key={stat.label}>
-                  <div className="text-2xl md:text-3xl font-bold text-green-accent">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </div>
-              ))}
-            </div>
           </AnimatedSection>
         </div>
       </div>
