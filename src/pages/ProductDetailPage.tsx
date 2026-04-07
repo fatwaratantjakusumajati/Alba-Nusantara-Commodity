@@ -69,7 +69,7 @@ const ProductDetailPage = () => {
                 </span>
                 <h2 className="section-title mt-2 mb-6">{t("detail.description")}</h2>
                 {product.description.map((p, i) => (
-                  <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
+                  <p key={i} className="text-muted-foreground leading-relaxed mb-4">{t(p) !== p ? t(p) : p}</p>
                 ))}
               </AnimatedSection>
             </div>
