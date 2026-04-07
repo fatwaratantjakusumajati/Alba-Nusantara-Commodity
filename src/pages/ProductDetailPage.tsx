@@ -51,7 +51,7 @@ const ProductDetailPage = () => {
                   {product.name}
                 </h1>
                 <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
-                  {product.tagline}
+                  {t(product.tagline) !== product.tagline ? t(product.tagline) : product.tagline}
                 </p>
               </AnimatedSection>
             </div>
