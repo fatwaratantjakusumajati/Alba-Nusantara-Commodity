@@ -51,7 +51,7 @@ const ProductDetailPage = () => {
                   {product.name}
                 </h1>
                 <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
-                  {product.tagline}
+                  {t(product.tagline) !== product.tagline ? t(product.tagline) : product.tagline}
                 </p>
               </AnimatedSection>
             </div>
@@ -69,7 +69,7 @@ const ProductDetailPage = () => {
                 </span>
                 <h2 className="section-title mt-2 mb-6">{t("detail.description")}</h2>
                 {product.description.map((p, i) => (
-                  <p key={i} className="text-muted-foreground leading-relaxed mb-4">{p}</p>
+                  <p key={i} className="text-muted-foreground leading-relaxed mb-4">{t(p) !== p ? t(p) : p}</p>
                 ))}
               </AnimatedSection>
             </div>
@@ -83,7 +83,7 @@ const ProductDetailPage = () => {
                         <div className="w-6 h-6 rounded-full gradient-accent flex items-center justify-center shrink-0 mt-0.5">
                           <span className="text-xs font-bold text-accent-foreground">{i + 1}</span>
                         </div>
-                        <p className="text-sm text-muted-foreground leading-relaxed">{b}</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{t(b) !== b ? t(b) : b}</p>
                       </div>
                     ))}
                   </div>

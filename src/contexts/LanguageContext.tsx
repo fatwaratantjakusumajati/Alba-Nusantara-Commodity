@@ -127,8 +127,28 @@ const translations: Record<string, Record<Language, string>> = {
     en: "High-quality pure essential oils from selected Indonesian aromatic plants for aromatherapy and industry.",
   },
   "prod.bird_nest.desc": {
-    id: "Sarang burung walet premium yang dipanen dan diproses dengan standar higienis tertinggi untuk pasar ekspor.",
-    en: "Premium bird's nest harvested and processed with the highest hygienic standards for export markets.",
+    id: "Kami memasok sarang burung walet premium yang diperoleh dari mitra terpilih dengan pemanenan terkontrol dan pengolahan higienis.",
+    en: "We supply premium-grade edible bird nest sourced from selected partners with controlled harvesting and hygienic processing.",
+  },
+  "prod.bird_nest.tagline": {
+    id: "Sarang Burung Walet Premium dengan Standar Higienis Tertinggi",
+    en: "Premium Edible Bird Nest with the Highest Hygienic Standards",
+  },
+  "prod.bird_nest.detail_desc": {
+    id: "Kami memasok sarang burung walet kelas premium yang diperoleh dari mitra terpilih dengan pemanenan terkontrol dan pengolahan higienis. Produk dibersihkan, dinilai, dan dikemas dengan hati-hati untuk menjaga kemurnian, nilai gizi, dan tampilan.",
+    en: "We supply premium-grade edible bird nest sourced from selected partners with controlled harvesting and hygienic processing. Products are carefully cleaned, graded, and packed to preserve purity, nutritional value, and appearance.",
+  },
+  "prod.bird_nest.benefit1": {
+    id: "Grading premium dengan kemurnian tinggi",
+    en: "Premium grading with high purity",
+  },
+  "prod.bird_nest.benefit2": {
+    id: "Pengolahan higienis dan terkontrol",
+    en: "Hygienic and controlled processing",
+  },
+  "prod.bird_nest.benefit3": {
+    id: "Dokumentasi siap ekspor dan keterlacakan",
+    en: "Export-ready documentation and traceability",
   },
   "prod.cocoa_beans.desc": {
     id: "Biji kakao fermentasi berkualitas dari perkebunan Sulawesi dan Sumatera untuk industri cokelat dunia.",
