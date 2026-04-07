@@ -1,4 +1,4 @@
-import { Leaf, BadgeCheck, Clock, Headphones, TrendingUp, Truck } from "lucide-react";
+import { Heart, MapPin, Award, MessageSquare, Handshake, Globe } from "lucide-react";
 import AnimatedSection from "./AnimatedSection";
 import { useLanguage } from "@/contexts/LanguageContext";
 
@@ -6,12 +6,12 @@ const WhyChooseUsSection = () => {
   const { t } = useLanguage();
 
   const reasons = [
-    { icon: Leaf, title: t("wcu.natural"), desc: t("wcu.natural.desc") },
-    { icon: BadgeCheck, title: t("wcu.certified"), desc: t("wcu.certified.desc") },
-    { icon: Clock, title: t("wcu.ontime"), desc: t("wcu.ontime.desc") },
-    { icon: Headphones, title: t("wcu.service"), desc: t("wcu.service.desc") },
-    { icon: TrendingUp, title: t("wcu.capacity"), desc: t("wcu.capacity.desc") },
-    { icon: Truck, title: t("wcu.distribution"), desc: t("wcu.distribution.desc") },
+    { icon: Heart, title: t("wcu.client"), desc: t("wcu.client.desc") },
+    { icon: MapPin, title: t("wcu.sourcing"), desc: t("wcu.sourcing.desc") },
+    { icon: Award, title: t("wcu.quality"), desc: t("wcu.quality.desc") },
+    { icon: MessageSquare, title: t("wcu.transparent"), desc: t("wcu.transparent.desc") },
+    { icon: Handshake, title: t("wcu.longterm"), desc: t("wcu.longterm.desc") },
+    { icon: Globe, title: t("wcu.global"), desc: t("wcu.global.desc") },
   ];
 
   return (
