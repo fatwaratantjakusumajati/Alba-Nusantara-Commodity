@@ -101,18 +101,15 @@ export const productsData: ProductData[] = [
   {
     slug: "clove",
     name: "Clove",
-    tagline: "Cengkeh Premium dengan Kadar Eugenol Tinggi dari Maluku & Sulawesi",
+    tagline: "prod.clove.tagline",
     image: product4,
     detailImage: detailClove,
-    description: [
-      "Clove atau cengkeh kami berasal dari daerah penghasil cengkeh terbaik di Indonesia — Maluku, Sulawesi Utara, dan Jawa. Cengkeh Indonesia dikenal memiliki kadar eugenol tertinggi di dunia (80-90%), menjadikannya sangat diminati oleh industri makanan, farmasi, dan rokok kretek.",
-      "Kami menyediakan whole cloves, clove stems, dan clove oil untuk pasar domestik dan ekspor ke India, Vietnam, Eropa, dan Timur Tengah.",
-    ],
+    description: ["prod.clove.detail_desc"],
     benefits: [
-      "Kadar eugenol tinggi (80-90%) dari varietas terbaik Indonesia",
-      "Proses pengeringan alami menjaga kualitas aroma",
-      "Tersedia: whole cloves, stems, dan clove oil",
-      "Memenuhi standar ASTA dan ESA untuk ekspor",
+      "prod.clove.benefit1",
+      "prod.clove.benefit2",
+      "prod.clove.benefit3",
+      "prod.clove.benefit4",
     ],
     steps: [
       { icon: TreePine, title: "Panen Cengkeh", desc: "Bunga cengkeh dipanen saat masih kuncup dan berwarna merah muda kecoklatan — tahap optimal untuk mendapatkan kadar eugenol tertinggi." },
