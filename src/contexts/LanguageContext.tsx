@@ -155,8 +155,32 @@ const translations: Record<string, Record<Language, string>> = {
     en: "Quality fermented cocoa beans from Sulawesi and Sumatra plantations for the world's chocolate industry.",
   },
   "prod.clove.desc": {
-    id: "Cengkeh kering premium dari Maluku dan Sulawesi dengan kadar eugenol tinggi untuk berbagai kebutuhan industri.",
-    en: "Premium dried cloves from Maluku and Sulawesi with high eugenol content for various industrial needs.",
+    id: "Cengkeh kami bersumber dari daerah penghasil utama Indonesia, terutama untuk industri rajangan dan rokok kretek.",
+    en: "Our cloves are sourced from Indonesia's major producing regions, primarily supplied for clove cutting (rajangan) and cigarette industries.",
+  },
+  "prod.clove.tagline": {
+    id: "Cengkeh Premium untuk Industri Rajangan dan Rokok Kretek",
+    en: "Premium Cloves for Rajangan and Kretek Cigarette Industries",
+  },
+  "prod.clove.detail_desc": {
+    id: "Cengkeh kami bersumber dari daerah penghasil utama Indonesia dan terutama dipasok untuk industri rajangan (clove cutting) dan rokok. Dikenal dengan aroma yang kuat dan kualitas yang konsisten, cengkeh kami dipilih dan ditangani untuk memenuhi persyaratan khusus industri kretek dan aplikasi manufaktur terkait.",
+    en: "Our cloves are sourced from Indonesia's major producing regions and are primarily supplied for clove cutting (rajangan) and cigarette industries. Known for their strong aroma and consistent quality, our cloves are selected and handled to meet the specific requirements of kretek and related manufacturing applications.",
+  },
+  "prod.clove.benefit1": {
+    id: "Aroma kuat dan kematangan cengkeh yang konsisten",
+    en: "Strong aroma and consistent clove maturity",
+  },
+  "prod.clove.benefit2": {
+    id: "Cocok untuk rajangan dan produksi rokok",
+    en: "Suitable for rajangan and cigarette production",
+  },
+  "prod.clove.benefit3": {
+    id: "Kontrol ketat terhadap kadar air dan kualitas",
+    en: "Strict moisture and quality control",
+  },
+  "prod.clove.benefit4": {
+    id: "Volume fleksibel untuk permintaan domestik dan ekspor",
+    en: "Flexible volumes for domestic and export demand",
   },
   "prod.view_detail": { id: "Lihat Detail & Proses Produksi →", en: "View Details & Production Process →" },
 
