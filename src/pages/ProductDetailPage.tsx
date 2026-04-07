@@ -83,7 +83,7 @@ const ProductDetailPage = () => {
                         <div className="w-6 h-6 rounded-full gradient-accent flex items-center justify-center shrink-0 mt-0.5">
                           <span className="text-xs font-bold text-accent-foreground">{i + 1}</span>
                         </div>
-                        <p className="text-sm text-muted-foreground leading-relaxed">{b}</p>
+                        <p className="text-sm text-muted-foreground leading-relaxed">{t(b) !== b ? t(b) : b}</p>
                       </div>
                     ))}
                   </div>
