@@ -18,8 +18,7 @@ const AboutSection = () => {
                 style={{ boxShadow: "var(--shadow-lg)" }}
               />
               <div className="absolute -bottom-6 -right-6 gradient-forest text-primary-foreground rounded-xl p-6 hidden md:block" style={{ boxShadow: "var(--shadow-xl)" }}>
-                <div className="text-3xl font-black">15+</div>
-                <div className="text-sm text-primary-foreground/80">{t("about.experience")}</div>
+                <div className="text-lg font-bold">{t("about.established")}</div>
               </div>
             </div>
           </AnimatedSection>
