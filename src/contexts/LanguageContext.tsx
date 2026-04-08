@@ -109,7 +109,7 @@ const translations: Record<string, Record<Language, string>> = {
   // Our Location
   "loc.label": { id: "Area Sumber", en: "Sourcing Areas" },
   "loc.title": { id: "Lokasi Kami", en: "Our Location" },
-  "loc.subtitle": { id: "Kami memperoleh bahan baku berkualitas tinggi dari berbagai wilayah strategis di Indonesia", en: "We source high-quality raw materials from various strategic regions in Indonesia" },
+  "loc.subtitle": { id: "Produk kami bersumber langsung dari berbagai wilayah unggulan di Indonesia, memastikan kualitas terbaik dari setiap daerah penghasil", en: "Our products are sourced directly from Indonesia's finest producing regions, ensuring the best quality from each area" },
 
   // Our Markets
   "mkt.label": { id: "Jangkauan Global", en: "Global Reach" },
