@@ -36,7 +36,7 @@ const translations: Record<string, Record<Language, string>> = {
   // About
   "about.label": { id: "Tentang Kami", en: "About Us" },
   "about.title": { id: "Produk Alam Premium dari Indonesia", en: "Premium Natural Products from Indonesia" },
-  "about.established": { id: "Didirikan Tahun 2020", en: "Established in 2020" },
+  "about.established": { id: "Didirikan Tahun 2020", en: "Founded in 2020" },
   "about.p1": {
     id: "ALBA NUSANTARA COMMODITY (ALNC) adalah perusahaan sourcing dan perdagangan komoditas Indonesia yang berkomitmen menghadirkan produk pertanian dan alam premium dari jantung Nusantara ke pasar domestik dan global. Dibangun di atas kemitraan lokal yang kuat dan rasa hormat mendalam terhadap sumber daya alam Indonesia, ALNC berperan sebagai jembatan antara produsen terpercaya dan pembeli yang mencari kualitas konsisten, transparansi, dan keandalan.",
     en: "ALBA NUSANTARA COMMODITY (ALNC) is an Indonesian commodity sourcing and trading company committed to delivering premium agricultural and natural products from the heart of the archipelago to domestic and global markets. Built on strong local partnerships and deep respect for Indonesia's natural resources, ALNC serves as a bridge between trusted producers and buyers seeking consistent quality, transparency, and reliability.",
