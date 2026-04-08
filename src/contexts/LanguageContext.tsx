@@ -28,8 +28,8 @@ const translations: Record<string, Record<Language, string>> = {
   "hero.title1": { id: "Kekayaan Alam", en: "Natural Wealth of" },
   "hero.title2": { id: "Nusantara", en: "Nusantara" },
   "hero.desc": {
-    id: "Menghadirkan produk alam premium — Essential Oil, Bird Nest, Cocoa Beans, dan Clove — dengan kualitas terbaik dari bumi Indonesia.",
-    en: "Delivering premium natural products — Essential Oil, Bird Nest, Cocoa Beans, and Clove — with the finest quality from Indonesia.",
+    id: "Menghadirkan produk alam premium, Essential Oil, Bird Nest, Cocoa Beans, dan Clove, dengan kualitas terbaik dari bumi Indonesia.",
+    en: "Delivering premium natural products, Essential Oil, Bird Nest, Cocoa Beans, and Clove, with the finest quality from Indonesia.",
   },
   "hero.cta": { id: "Lihat Produk", en: "View Products" },
 
@@ -42,8 +42,8 @@ const translations: Record<string, Record<Language, string>> = {
     en: "ALBA NUSANTARA COMMODITY (ALNC) is an Indonesian commodity sourcing and trading company committed to delivering premium agricultural and natural products from the heart of the archipelago to domestic and global markets. Built on strong local partnerships and deep respect for Indonesia's natural resources, ALNC serves as a bridge between trusted producers and buyers seeking consistent quality, transparency, and reliability.",
   },
   "about.p2": {
-    id: "Di ALNC, kami percaya bahwa komoditas lebih dari sekadar produk — mereka adalah hasil dari kerja sama antara manusia, tanah, dan warisan budaya. Peran kami adalah memastikan nilai-nilai ini tetap terjaga sambil memenuhi standar pasar modern dan permintaan global.",
-    en: "At ALNC, we believe commodities are more than products — they are the result of people, land, and heritage working together. Our role is to ensure these values are preserved while meeting modern market standards and global demand.",
+    id: "Di ALNC, kami percaya bahwa komoditas lebih dari sekadar produk, mereka adalah hasil dari kerja sama antara manusia, tanah, dan warisan budaya. Peran kami adalah memastikan nilai-nilai ini tetap terjaga sambil memenuhi standar pasar modern dan permintaan global.",
+    en: "At ALNC, we believe commodities are more than products, they are the result of people, land, and heritage working together. Our role is to ensure these values are preserved while meeting modern market standards and global demand.",
   },
   "about.stat.employees": { id: "Karyawan", en: "Employees" },
   "about.stat.countries": { id: "Negara Ekspor", en: "Export Countries" },
@@ -85,7 +85,7 @@ const translations: Record<string, Record<Language, string>> = {
   "cv.quality": { id: "Komitmen Kualitas", en: "Quality Commitment" },
   "cv.quality.desc": { id: "Kami menjunjung standar kualitas yang ketat untuk memastikan konsistensi, keamanan, dan keandalan dari pengadaan hingga pengiriman.", en: "We uphold strict quality standards to ensure consistency, safety, and reliability from sourcing to delivery." },
   "cv.partnership": { id: "Kemitraan", en: "Partnership" },
-  "cv.partnership.desc": { id: "Kami percaya pada pertumbuhan bersama — membangun hubungan jangka panjang dengan petani, pengolah, pembeli, dan pemangku kepentingan.", en: "We believe in growing together — building long-term relationships with farmers, processors, buyers, and stakeholders." },
+  "cv.partnership.desc": { id: "Kami percaya pada pertumbuhan bersama, membangun hubungan jangka panjang dengan petani, pengolah, pembeli, dan pemangku kepentingan.", en: "We believe in growing together, building long-term relationships with farmers, processors, buyers, and stakeholders." },
   "cv.client": { id: "Fokus pada Klien & Pembeli", en: "Client & Buyer Centricity" },
   "cv.client.desc": { id: "Kami menempatkan klien dan pembeli di pusat setiap keputusan. Kami mendengarkan kebutuhan, spesifikasi, dan tujuan pasar mereka dengan seksama, serta menyelaraskan pengadaan, pengolahan, dan pengiriman untuk memenuhi dan melampaui harapan.", en: "We place our clients and buyers at the heart of every decision. We listen carefully to their needs, specifications, and market objectives, and align our sourcing, processing, and delivery to meet and exceed expectations." },
 
@@ -94,7 +94,7 @@ const translations: Record<string, Record<Language, string>> = {
   "wcu.title": { id: "Mengapa Memilih Kami?", en: "Why Choose Us?" },
   "wcu.subtitle": { id: "Keunggulan yang menjadikan kami mitra terpercaya untuk produk alam Indonesia", en: "Advantages that make us a trusted partner for Indonesian natural products" },
   "wcu.client": { id: "Pendekatan Berpusat pada Klien", en: "Client-Centric Approach" },
-  "wcu.client.desc": { id: "Mengutamakan kebutuhan klien dengan mendengarkan terlebih dahulu — memahami spesifikasi, timeline, dan tujuan pasar sebelum memberikan solusi.", en: "Prioritizing client needs by listening first — understanding specifications, timelines, and market objectives before providing solutions." },
+  "wcu.client.desc": { id: "Mengutamakan kebutuhan klien dengan mendengarkan terlebih dahulu, memahami spesifikasi, timeline, dan tujuan pasar sebelum memberikan solusi.", en: "Prioritizing client needs by listening first, understanding specifications, timelines, and market objectives before providing solutions." },
   "wcu.sourcing": { id: "Kemampuan Sourcing Lokal yang Kuat", en: "Strong Local Sourcing Capability" },
   "wcu.sourcing.desc": { id: "Hubungan erat dengan petani dan prosesor di seluruh Indonesia memastikan konsistensi, keterlacakan (traceability), dan fleksibilitas produk.", en: "Close relationships with farmers and processors across Indonesia ensure consistency, traceability, and product flexibility." },
   "wcu.quality": { id: "Standar Kualitas Internasional", en: "International Quality Standards" },
@@ -102,7 +102,7 @@ const translations: Record<string, Record<Language, string>> = {
   "wcu.transparent": { id: "Komunikasi yang Transparan", en: "Transparent Communication" },
   "wcu.transparent.desc": { id: "Komunikasi yang jelas dan terstruktur memberikan keandalan yang bisa diandalkan oleh pembeli.", en: "Clear and structured communication provides the reliability that buyers can count on." },
   "wcu.longterm": { id: "Pendekatan Kemitraan Jangka Panjang", en: "Long-Term Partnership Approach" },
-  "wcu.longterm.desc": { id: "Melampaui transaksi biasa — bekerja bersama klien untuk mendukung pertumbuhan berkelanjutan, nilai bersama, dan kepercayaan mutual.", en: "Going beyond ordinary transactions — working alongside clients to support sustainable growth, shared values, and mutual trust." },
+  "wcu.longterm.desc": { id: "Melampaui transaksi biasa, bekerja bersama klien untuk mendukung pertumbuhan berkelanjutan, nilai bersama, dan kepercayaan mutual.", en: "Going beyond ordinary transactions, working alongside clients to support sustainable growth, shared values, and mutual trust." },
   "wcu.global": { id: "Menghubungkan Permintaan Global dengan Potensi Indonesia", en: "Connecting Global Demand with Indonesia's Potential" },
   "wcu.global.desc": { id: "Menjembatani kebutuhan pasar dunia dengan kekayaan sumber daya alam Indonesia secara optimal.", en: "Optimally bridging global market needs with Indonesia's abundant natural resources." },
 

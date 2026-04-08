@@ -80,7 +80,7 @@ export const productsData: ProductData[] = [
     image: product3,
     detailImage: detailCocoa,
     description: [
-      "Cocoa Beans kami berasal dari perkebunan kakao di Sulawesi Selatan, Sumatera Barat, dan Papua — daerah penghasil kakao terbaik Indonesia. Biji kakao kami diproses melalui fermentasi terkontrol untuk menghasilkan flavor cokelat yang khas dan diminati oleh produsen cokelat dunia.",
+      "Cocoa Beans kami berasal dari perkebunan kakao di Sulawesi Selatan, Sumatera Barat, dan Papua, daerah penghasil kakao terbaik Indonesia. Biji kakao kami diproses melalui fermentasi terkontrol untuk menghasilkan flavor cokelat yang khas dan diminati oleh produsen cokelat dunia.",
       "Kami menyuplai biji kakao fermentasi dan non-fermentasi dalam berbagai grade untuk industri cokelat, confectionery, dan kosmetik di Eropa, Amerika, dan Asia.",
     ],
     benefits: [
@@ -112,7 +112,7 @@ export const productsData: ProductData[] = [
       "prod.clove.benefit4",
     ],
     steps: [
-      { icon: TreePine, title: "Panen Cengkeh", desc: "Bunga cengkeh dipanen saat masih kuncup dan berwarna merah muda kecoklatan — tahap optimal untuk mendapatkan kadar eugenol tertinggi." },
+      { icon: TreePine, title: "Panen Cengkeh", desc: "Bunga cengkeh dipanen saat masih kuncup dan berwarna merah muda kecoklatan, tahap optimal untuk mendapatkan kadar eugenol tertinggi." },
       { icon: Bug, title: "Sortasi Awal", desc: "Cengkeh segar disortir untuk memisahkan tangkai, daun, dan bunga yang tidak memenuhi standar ukuran dan warna." },
       { icon: Sun, title: "Pengeringan", desc: "Cengkeh dikeringkan dengan metode sun-drying selama 3-5 hari hingga kadar air mencapai 12-14%, menjaga aroma dan warna alami." },
       { icon: Wind, title: "Pembersihan & Pemisahan", desc: "Cengkeh kering dibersihkan dari debu dan benda asing menggunakan mesin winnowing dan ayakan untuk menghasilkan produk bersih." },
