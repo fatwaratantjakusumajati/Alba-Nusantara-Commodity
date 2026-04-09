@@ -122,9 +122,33 @@ const translations: Record<string, Record<Language, string>> = {
   "prod.label": { id: "Produk", en: "Products" },
   "prod.title": { id: "Produk Unggulan Kami", en: "Our Featured Products" },
   "prod.subtitle": { id: "Produk alam premium Indonesia yang diproses dengan teknologi modern", en: "Premium Indonesian natural products processed with modern technology" },
+  "prod.essential_oil.tagline": {
+    id: "Minyak Atsiri Indonesia Pilihan untuk Kebutuhan Industri dan Komersial",
+    en: "Selected Indonesian Essential Oils for Industrial and Commercial Needs",
+  },
   "prod.essential_oil.desc": {
-    id: "Minyak atsiri murni berkualitas tinggi dari tanaman aromatik pilihan Indonesia untuk aromaterapi dan industri.",
-    en: "High-quality pure essential oils from selected Indonesian aromatic plants for aromatherapy and industry.",
+    id: "ALBA NUSANTARA COMMODITY menyediakan rangkaian minyak atsiri Indonesia pilihan yang berasal dari tanaman alami dan diproduksi melalui proses distilasi terkontrol.",
+    en: "ALBA NUSANTARA COMMODITY supplies a selected range of Indonesian essential oils derived from natural botanicals and produced through controlled distillation processes.",
+  },
+  "prod.essential_oil.detail_desc": {
+    id: "ALBA NUSANTARA COMMODITY menyediakan rangkaian minyak atsiri Indonesia pilihan yang berasal dari tanaman alami dan diproduksi melalui proses distilasi terkontrol. Minyak atsiri kami ditangani dengan fokus pada kemurnian, konsistensi, dan kesesuaian dengan spesifikasi industri dan komersial. Kami saat ini menyuplai minyak atsiri berikut: Citronella Oil (Sereh) yang umum digunakan untuk wewangian, pengusir serangga, dan aplikasi industri. Patchouli Oil (Nilam) yang merupakan bahan utama dalam industri parfum dengan aroma earthy yang khas. Cajuput Oil (Kayu Putih) yang banyak digunakan untuk produk farmasi, perawatan pribadi, dan kesehatan. Crude Eugenol (Daun/Tangkai Cengkeh) yang berasal dari daun dan tangkai cengkeh untuk pemrosesan lebih lanjut dalam aplikasi kimia, farmasi, dan industri.",
+    en: "ALBA NUSANTARA COMMODITY supplies a selected range of Indonesian essential oils derived from natural botanicals and produced through controlled distillation processes. Our essential oils are handled with a focus on purity, consistency, and alignment with industrial and commercial specifications. We currently supply the following essential oils: Citronella Oil (Sereh) commonly used for fragrance, insect repellent, and industrial applications, known for its fresh citrus aroma. Patchouli Oil (Nilam), a key ingredient in the fragrance industry, known for its deep, earthy scent and strong fixative properties. Cajuput Oil (Kayu Putih) widely used for pharmaceutical, personal care, and wellness products, valued for its distinctive aroma and functional properties. Crude Eugenol (Clove Leaf/Stem) derived from clove leaves and stems, primarily used for further processing in chemical, pharmaceutical, and industrial applications.",
+  },
+  "prod.essential_oil.benefit1": {
+    id: "Citronella Oil (Sereh) untuk wewangian, pengusir serangga, dan aplikasi industri",
+    en: "Citronella Oil (Sereh) for fragrance, insect repellent, and industrial applications",
+  },
+  "prod.essential_oil.benefit2": {
+    id: "Patchouli Oil (Nilam) bahan utama industri parfum dengan aroma earthy yang khas",
+    en: "Patchouli Oil (Nilam), a key ingredient in the fragrance industry with deep earthy scent",
+  },
+  "prod.essential_oil.benefit3": {
+    id: "Cajuput Oil (Kayu Putih) untuk produk farmasi, perawatan pribadi, dan kesehatan",
+    en: "Cajuput Oil (Kayu Putih) for pharmaceutical, personal care, and wellness products",
+  },
+  "prod.essential_oil.benefit4": {
+    id: "Crude Eugenol (Daun/Tangkai Cengkeh) untuk pemrosesan kimia, farmasi, dan industri",
+    en: "Crude Eugenol (Clove Leaf/Stem) for chemical, pharmaceutical, and industrial processing",
   },
   "prod.bird_nest.desc": {
     id: "Kami memasok sarang burung walet premium yang diperoleh dari mitra terpilih dengan pemanenan terkontrol dan pengolahan higienis.",
