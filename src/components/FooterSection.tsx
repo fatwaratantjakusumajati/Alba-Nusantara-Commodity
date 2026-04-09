@@ -1,97 +1,102 @@
-import { MapPin, Phone, Mail, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { MapPin, Phone, Mail, Globe, Linkedin } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import logo from "@/assets/logo.png";
-
-const socialIcons = [
-  { icon: Facebook, label: "Facebook" },
-  { icon: Instagram, label: "Instagram" },
-  { icon: Linkedin, label: "LinkedIn" },
-  { icon: Youtube, label: "YouTube" },
-];
 
 const FooterSection = () => {
   const { t } = useLanguage();
 
-  const quickLinks = [t("nav.about"), t("nav.products"), t("nav.contact")];
-
-  const scrollTo = (label: string) => {
-    const map: Record<string, string> = {};
-    map[t("nav.about")] = "about";
-    map[t("nav.products")] = "products";
-    map[t("nav.contact")] = "contact";
-    const el = document.getElementById(map[label] || label);
-    if (el) {
-      const y = el.getBoundingClientRect().top + window.scrollY - 80;
-      window.scrollTo({ top: y, behavior: "smooth" });
-    }
-  };
-
   return (
     <footer id="contact" className="gradient-forest text-primary-foreground">
-      <div className="container mx-auto px-4 py-16 md:py-20">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      {/* CTA Section */}
+      <div className="container mx-auto px-4 pt-16 md:pt-20 pb-12">
+        <div className="text-center max-w-2xl mx-auto">
+          <p className="text-sm font-semibold text-primary-foreground/60 uppercase tracking-widest mb-3">
+            {t("footer.cta_label")}
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            {t("footer.cta_title")}
+          </h2>
+          <p className="text-primary-foreground/70 text-sm md:text-base leading-relaxed mb-6">
+            {t("footer.cta_desc")}
+          </p>
+          <a
+            href="mailto:info@alnusacommodity.com"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary-foreground text-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
+          >
+            {t("footer.cta_button")}
+          </a>
+        </div>
+      </div>
+
+      {/* Company Info Section */}
+      <div className="container mx-auto px-4 py-12">
+        <div className="border-t border-primary-foreground/15 pt-10 grid md:grid-cols-2 gap-10">
+          {/* Left - Logo & Company */}
           <div>
-            <div className="mb-5">
+            <div className="mb-4">
               <img src={logo} alt="Alba Nusantara Commodity" className="h-12 w-auto brightness-0 invert" />
             </div>
-            <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              {t("footer.desc")}
-            </p>
-          </div>
-
-          <div>
-            <h4 className="font-bold mb-4 text-primary-foreground/90">{t("footer.quicklinks")}</h4>
-            <div className="space-y-2.5">
-              {quickLinks.map((link) => (
-                <button
-                  key={link}
-                  onClick={() => scrollTo(link)}
-                  className="block text-sm text-primary-foreground/60 hover:text-primary-foreground transition-colors"
-                >
-                  {link}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-bold mb-4 text-primary-foreground/90">{t("footer.contact")}</h4>
-            <div className="space-y-3">
-              <div className="flex gap-3 text-sm text-primary-foreground/70">
+            <h4 className="font-bold text-sm text-primary-foreground/90 mb-4">
+              {t("footer.company_info")}
+            </h4>
+            <div className="space-y-3 text-sm text-primary-foreground/70">
+              <div className="flex gap-3">
                 <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-                <span>Jl. Raya Kekayaan Alam No. 25, Jakarta Selatan 12560</span>
+                <span>Jl. Rajawali No.64 L, Surabaya, Indonesia, 60175</span>
               </div>
-              <div className="flex gap-3 text-sm text-primary-foreground/70">
-                <Phone className="w-4 h-4 shrink-0" />
-                <span>+62 21 7890 1234</span>
-              </div>
-              <div className="flex gap-3 text-sm text-primary-foreground/70">
-                <Mail className="w-4 h-4 shrink-0" />
-                <span>info@nusanature.co.id</span>
+              <div className="flex gap-3">
+                <Mail className="w-4 h-4 mt-0.5 shrink-0" />
+                <span>info@alnusacommodity.com</span>
               </div>
             </div>
           </div>
 
+          {/* Right - Contact */}
           <div>
-            <h4 className="font-bold mb-4 text-primary-foreground/90">{t("footer.follow")}</h4>
-            <div className="flex gap-3">
-              {socialIcons.map(({ icon: Icon, label }) => (
-                <a
-                  key={label}
-                  href="#"
-                  aria-label={label}
-                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-                >
-                  <Icon className="w-4 h-4" />
+            <h4 className="font-bold text-sm text-primary-foreground/90 mb-4">
+              {t("footer.phone")}
+            </h4>
+            <div className="space-y-2 text-sm text-primary-foreground/70 mb-6">
+              <div className="flex gap-3">
+                <Phone className="w-4 h-4 mt-0.5 shrink-0" />
+                <span>+62 889 9698 8508</span>
+              </div>
+              <div className="flex gap-3">
+                <Phone className="w-4 h-4 mt-0.5 shrink-0" />
+                <span>+62 812 3456 9804</span>
+              </div>
+              <div className="flex gap-3">
+                <Phone className="w-4 h-4 mt-0.5 shrink-0" />
+                <span>+62 857 8024 6440</span>
+              </div>
+            </div>
+
+            <div className="space-y-2 text-sm text-primary-foreground/70">
+              <div className="flex gap-3">
+                <Globe className="w-4 h-4 mt-0.5 shrink-0" />
+                <a href="https://www.alnusacommodity.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
+                  www.alnusacommodity.com
                 </a>
-              ))}
+              </div>
+              <div className="flex gap-3">
+                <Linkedin className="w-4 h-4 mt-0.5 shrink-0" />
+                <a href="https://www.linkedin.com/company/alnusacommodity" target="_blank" rel="noopener noreferrer" className="hover:text-primary-foreground transition-colors">
+                  alnusacommodity
+                </a>
+              </div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div className="border-t border-primary-foreground/15 mt-12 pt-8 text-center">
-          <p className="text-sm text-primary-foreground/50">
-            © {new Date().getFullYear()} Alba Nusantara Commodity. All rights reserved.
+      {/* Bottom Bar */}
+      <div className="container mx-auto px-4">
+        <div className="border-t border-primary-foreground/15 py-8 text-center">
+          <p className="text-sm text-primary-foreground/50 italic">
+            Connecting Indonesia's Natural Wealth to Global Markets
+          </p>
+          <p className="text-xs text-primary-foreground/40 mt-2">
+            © {new Date().getFullYear()} Alba Nusantara Commodity (ALNC). All rights reserved.
           </p>
         </div>
       </div>
