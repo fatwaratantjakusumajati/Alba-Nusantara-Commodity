@@ -174,9 +174,33 @@ const translations: Record<string, Record<Language, string>> = {
     id: "Dokumentasi siap ekspor dan keterlacakan",
     en: "Export-ready documentation and traceability",
   },
+  "prod.cocoa.tagline": {
+    id: "Biji Kakao Non-Fermentasi Berkualitas dari Indonesia",
+    en: "Quality Non-Fermented Cocoa Beans from Indonesia",
+  },
   "prod.cocoa_beans.desc": {
-    id: "Biji kakao fermentasi berkualitas dari perkebunan Sulawesi dan Sumatera untuk industri cokelat dunia.",
-    en: "Quality fermented cocoa beans from Sulawesi and Sumatra plantations for the world's chocolate industry.",
+    id: "Kami menyuplai biji kakao non-fermentasi yang bersumber dari area pertanian pilihan di Indonesia dengan penanganan pasca-panen yang cermat.",
+    en: "We supply non-fermented cocoa beans sourced from selected farming areas in Indonesia with careful post-harvest handling.",
+  },
+  "prod.cocoa.detail_desc": {
+    id: "Kami menyuplai biji kakao non-fermentasi yang bersumber dari area pertanian pilihan di Indonesia. Biji kakao kami ditangani dengan praktik pasca-panen yang cermat, termasuk pengeringan dan sortasi yang tepat, untuk memastikan kualitas yang stabil, kebersihan, dan kesesuaian untuk berbagai kebutuhan pemrosesan industri.",
+    en: "We supply non-fermented cocoa beans sourced from selected farming areas in Indonesia. Our cocoa beans are handled with careful post-harvest practices, including proper drying and sorting, to ensure stable quality, cleanliness, and suitability for various industrial processing requirements.",
+  },
+  "prod.cocoa.benefit1": {
+    id: "Biji kakao non-fermentasi",
+    en: "Non-fermented cocoa beans",
+  },
+  "prod.cocoa.benefit2": {
+    id: "Dikeringkan dan disortir dengan baik",
+    en: "Properly dried and well-sorted",
+  },
+  "prod.cocoa.benefit3": {
+    id: "Kualitas dan pasokan yang konsisten",
+    en: "Consistent quality and supply",
+  },
+  "prod.cocoa.benefit4": {
+    id: "Cocok untuk aplikasi industri dan pemrosesan lanjutan",
+    en: "Suitable for industrial and further processing applications",
   },
   "prod.clove.desc": {
     id: "Cengkeh kami bersumber dari daerah penghasil utama Indonesia, terutama untuk industri rajangan dan rokok kretek.",

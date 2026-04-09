@@ -73,18 +73,15 @@ export const productsData: ProductData[] = [
   {
     slug: "cocoa-beans",
     name: "Cocoa Beans",
-    tagline: "Biji Kakao Fermentasi Berkualitas dari Perkebunan Indonesia",
+    tagline: "prod.cocoa.tagline",
     image: product3,
     detailImage: detailCocoa,
-    description: [
-      "Cocoa Beans kami berasal dari perkebunan kakao di Sulawesi Selatan, Sumatera Barat, dan Papua, daerah penghasil kakao terbaik Indonesia. Biji kakao kami diproses melalui fermentasi terkontrol untuk menghasilkan flavor cokelat yang khas dan diminati oleh produsen cokelat dunia.",
-      "Kami menyuplai biji kakao fermentasi dan non-fermentasi dalam berbagai grade untuk industri cokelat, confectionery, dan kosmetik di Eropa, Amerika, dan Asia.",
-    ],
+    description: ["prod.cocoa.detail_desc"],
     benefits: [
-      "Biji kakao dari daerah penghasil terbaik Indonesia",
-      "Fermentasi terkontrol 5-7 hari untuk flavor optimal",
-      "Kadar lemak kakao tinggi (50-55%)",
-      "Memenuhi standar SNI dan regulasi ekspor internasional",
+      "prod.cocoa.benefit1",
+      "prod.cocoa.benefit2",
+      "prod.cocoa.benefit3",
+      "prod.cocoa.benefit4",
     ],
     steps: [
       { icon: Cherry, title: "Panen Buah Kakao", desc: "Buah kakao yang sudah matang optimal dipanen dari pohon secara selektif. Hanya buah dengan warna dan ukuran tepat yang dipilih." },
