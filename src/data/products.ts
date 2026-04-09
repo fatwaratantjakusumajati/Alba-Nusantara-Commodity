@@ -30,18 +30,15 @@ export const productsData: ProductData[] = [
   {
     slug: "essential-oil",
     name: "Essential Oil",
-    tagline: "Minyak Atsiri Murni dari Tanaman Aromatik Pilihan Indonesia",
+    tagline: "prod.essential_oil.tagline",
     image: product1,
     detailImage: detailEssentialOil,
-    description: [
-      "Essential Oil atau minyak atsiri kami diekstraksi dari tanaman aromatik terbaik Indonesia seperti patchouli, citronella, vetiver, dan clove leaf. Proses distilasi dilakukan dengan teknologi modern untuk menjaga kemurnian dan kualitas aroma.",
-      "Produk kami digunakan secara luas dalam industri aromaterapi, kosmetik, farmasi, dan parfum di lebih dari 20 negara. Setiap batch melewati uji laboratorium ketat untuk memastikan kesesuaian dengan standar internasional.",
-    ],
+    description: ["prod.essential_oil.detail_desc"],
     benefits: [
-      "100% murni tanpa campuran bahan sintetis",
-      "Memenuhi standar ISO 9235 untuk minyak atsiri",
-      "Tersedia dalam berbagai grade sesuai kebutuhan industri",
-      "Packaging aman untuk pengiriman internasional",
+      "prod.essential_oil.benefit1",
+      "prod.essential_oil.benefit2",
+      "prod.essential_oil.benefit3",
+      "prod.essential_oil.benefit4",
     ],
     steps: [
       { icon: Flower2, title: "Pemilihan Bahan Baku", desc: "Tanaman aromatik dipilih dari petani mitra di berbagai daerah Indonesia. Hanya tanaman dengan kualitas terbaik dan waktu panen optimal yang digunakan." },
