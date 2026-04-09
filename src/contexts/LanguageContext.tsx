@@ -240,6 +240,15 @@ const translations: Record<string, Record<Language, string>> = {
   "footer.quicklinks": { id: "Tautan Cepat", en: "Quick Links" },
   "footer.contact": { id: "Kontak", en: "Contact" },
   "footer.follow": { id: "Ikuti Kami", en: "Follow Us" },
+  "footer.cta_label": { id: "Mari Bermitra", en: "Let's Build" },
+  "footer.cta_title": { id: "Bangun Perdagangan Berkelanjutan Bersama", en: "Sustainable Trade Together" },
+  "footer.cta_desc": {
+    id: "ALBA NUSANTARA COMMODITY menyambut kolaborasi dengan mitra global yang mencari sumber komoditas terpercaya dari Indonesia.",
+    en: "ALBA NUSANTARA COMMODITY welcomes collaboration with global partners seeking reliable sourcing from Indonesia.",
+  },
+  "footer.cta_button": { id: "Mulai kemitraan Anda hari ini", en: "Start your partnership today" },
+  "footer.company_info": { id: "Informasi Perusahaan", en: "Company Information" },
+  "footer.phone": { id: "Nomor Telepon", en: "Phone Number" },
 
   // Product Detail Page
   "detail.back": { id: "Kembali ke Beranda", en: "Back to Home" },
