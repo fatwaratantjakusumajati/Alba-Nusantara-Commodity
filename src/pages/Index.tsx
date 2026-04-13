@@ -7,6 +7,7 @@ import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import ProductsSection from "@/components/ProductsSection";
 import OurLocationSection from "@/components/OurLocationSection";
 import OurMarketsSection from "@/components/OurMarketsSection";
+import CtaSection from "@/components/CtaSection";
 import FooterSection from "@/components/FooterSection";
 import ScrollToTop from "@/components/ScrollToTop";
 
@@ -22,6 +23,7 @@ const Index = () => (
       <OurLocationSection />
       <OurMarketsSection />
       <ProductsSection />
+      <CtaSection />
     </main>
     <FooterSection />
     <ScrollToTop />
