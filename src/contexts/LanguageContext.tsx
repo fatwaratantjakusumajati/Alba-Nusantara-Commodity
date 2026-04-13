@@ -252,6 +252,7 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Product Detail Page
   "detail.back": { id: "Kembali ke Beranda", en: "Back to Home" },
+  "detail.view_catalog": { id: "Lihat Katalog Produk", en: "View Product Catalog" },
   "detail.about_product": { id: "Tentang Produk", en: "About Product" },
   "detail.description": { id: "Deskripsi Produk", en: "Product Description" },
   "detail.benefits": { id: "Keunggulan", en: "Benefits" },

@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, FileText } from "lucide-react";
 import { productsData } from "@/data/products";
 import { useLanguage } from "@/contexts/LanguageContext";
 import AnimatedSection from "@/components/AnimatedSection";
@@ -53,6 +53,17 @@ const ProductDetailPage = () => {
                 <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
                   {t(product.tagline) !== product.tagline ? t(product.tagline) : product.tagline}
                 </p>
+                {product.catalogPdf && (
+                  <a
+                    href={product.catalogPdf}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 mt-6 px-5 py-2.5 rounded-full bg-primary-foreground/15 backdrop-blur-sm border border-primary-foreground/25 text-primary-foreground text-sm font-semibold hover:bg-primary-foreground/25 transition-colors"
+                  >
+                    <FileText className="w-4 h-4" />
+                    {t("detail.view_catalog")}
+                  </a>
+                )}
               </AnimatedSection>
             </div>
           </div>
