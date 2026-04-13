@@ -21,6 +21,7 @@ export interface ProductData {
   tagline: string;
   image: string;
   detailImage?: string;
+  catalogPdf?: string;
   description: string[];
   benefits: string[];
   steps: ProductStep[];
@@ -33,6 +34,7 @@ export const productsData: ProductData[] = [
     tagline: "prod.essential_oil.tagline",
     image: product1,
     detailImage: detailEssentialOil,
+    catalogPdf: "/catalogs/essential-oil-catalog.pdf",
     description: ["prod.essential_oil.detail_desc"],
     benefits: [
       "prod.essential_oil.benefit1",
@@ -55,6 +57,7 @@ export const productsData: ProductData[] = [
     tagline: "prod.bird_nest.tagline",
     image: product2,
     detailImage: detailBirdnest,
+    catalogPdf: "/catalogs/bird-nest-catalog.pdf",
     description: ["prod.bird_nest.detail_desc"],
     benefits: [
       "prod.bird_nest.benefit1",
@@ -76,6 +79,7 @@ export const productsData: ProductData[] = [
     tagline: "prod.cocoa.tagline",
     image: product3,
     detailImage: detailCocoa,
+    catalogPdf: "/catalogs/cocoa-beans-catalog.pdf",
     description: ["prod.cocoa.detail_desc"],
     benefits: [
       "prod.cocoa.benefit1",
@@ -98,6 +102,7 @@ export const productsData: ProductData[] = [
     tagline: "prod.clove.tagline",
     image: product4,
     detailImage: detailClove,
+    catalogPdf: "/catalogs/clove-catalog.pdf",
     description: ["prod.clove.detail_desc"],
     benefits: [
       "prod.clove.benefit1",
