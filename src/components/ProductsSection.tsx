@@ -11,10 +11,10 @@ const ProductsSection = () => {
   const { t } = useLanguage();
 
   const products = [
-    { image: product1, name: "Essential Oil", desc: t("prod.essential_oil.desc"), slug: "essential-oil" },
-    { image: product2, name: "Bird Nest", desc: t("prod.bird_nest.desc"), slug: "bird-nest" },
-    { image: product3, name: "Cocoa Beans", desc: t("prod.cocoa_beans.desc"), slug: "cocoa-beans" },
-    { image: product4, name: "Clove", desc: t("prod.clove.desc"), slug: "clove" },
+    { image: product1, name: t("prod.essential_oil.name"), desc: t("prod.essential_oil.desc"), slug: "essential-oil" },
+    { image: product2, name: t("prod.bird_nest.name"), desc: t("prod.bird_nest.desc"), slug: "bird-nest" },
+    { image: product3, name: t("prod.cocoa.name"), desc: t("prod.cocoa_beans.desc"), slug: "cocoa-beans" },
+    { image: product4, name: t("prod.clove.name"), desc: t("prod.clove.desc"), slug: "clove" },
   ];
 
   return (

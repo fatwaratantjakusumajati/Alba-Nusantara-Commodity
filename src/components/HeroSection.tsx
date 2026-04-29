@@ -16,7 +16,10 @@ const HeroSection = () => {
   const [current, setCurrent] = useState(0);
   const { t } = useLanguage();
 
-  const next = useCallback(() => setCurrent((c) => (c + 1) % slides.length), []);
+  const next = useCallback(
+    () => setCurrent((c) => (c + 1) % slides.length),
+    [],
+  );
   const prev = () => setCurrent((c) => (c - 1 + slides.length) % slides.length);
 
   useEffect(() => {
@@ -41,7 +44,11 @@ const HeroSection = () => {
             i === current ? "opacity-100" : "opacity-0"
           }`}
         >
-          <img src={slide.image} alt={slide.alt} className="w-full h-full object-cover" />
+          <img
+            src={slide.image}
+            alt={slide.alt}
+            className="w-full h-full object-cover"
+          />
         </div>
       ))}
 
@@ -91,7 +98,9 @@ const HeroSection = () => {
             key={i}
             onClick={() => setCurrent(i)}
             className={`h-2 rounded-full transition-all duration-300 ${
-              i === current ? "w-8 bg-primary-foreground" : "w-2 bg-primary-foreground/40 hover:bg-primary-foreground/60"
+              i === current
+                ? "w-8 bg-primary-foreground"
+                : "w-2 bg-primary-foreground/40 hover:bg-primary-foreground/60"
             }`}
           />
         ))}

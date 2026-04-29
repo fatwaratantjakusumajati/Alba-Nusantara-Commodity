@@ -35,7 +35,7 @@ const ProductDetailPage = () => {
 
       <section className="relative pt-20">
         <div className="relative h-[65vh] md:h-[75vh] overflow-hidden">
-          <img src={product.detailImage || product.image} alt={product.name} className="w-full h-full object-cover" style={{ objectPosition: "center 40%" }} loading="eager" />
+          <img src={product.detailImage || product.image} alt={t(product.name)} className="w-full h-full object-cover" style={{ objectPosition: "center 40%" }} loading="eager" />
           <div className="absolute inset-0 hero-overlay" />
           <div className="absolute inset-0 flex items-start pt-24 z-10">
             <div className="container mx-auto px-4">
@@ -48,7 +48,7 @@ const ProductDetailPage = () => {
                   {t("detail.back")}
                 </button>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-primary-foreground tracking-tight mb-4">
-                  {product.name}
+                  {t(product.name)}
                 </h1>
                 <p className="text-lg md:text-xl text-primary-foreground/80 max-w-2xl">
                   {t(product.tagline) !== product.tagline ? t(product.tagline) : product.tagline}
@@ -111,7 +111,7 @@ const ProductDetailPage = () => {
             <span className="text-sm font-semibold text-accent uppercase tracking-widest">
               {t("detail.process_label")}
             </span>
-            <h2 className="section-title mt-2">{t("detail.process_title")} {product.name}</h2>
+            <h2 className="section-title mt-2">{t("detail.process_title")} {t(product.name)}</h2>
             <p className="section-subtitle">{t("detail.process_subtitle")}</p>
           </AnimatedSection>
 
@@ -124,13 +124,13 @@ const ProductDetailPage = () => {
                 return (
                   <AnimatedSection key={step.title} delay={i * 0.1}>
                     <div className={`relative flex items-start gap-6 md:gap-0 ${isLeft ? "md:flex-row" : "md:flex-row-reverse"}`}>
-                      <div className={`flex-1 md:w-1/2 ${isLeft ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
+                      <div className={`flex-1 md:w-1/2 ${isLeft ? "pl-16 md:pl-0 md:pr-16 md:text-right" : "pl-16 md:pl-16"}`}>
                         <div className="bg-card border border-border rounded-xl p-5" style={{ boxShadow: "var(--shadow-sm)" }}>
                           <span className="text-xs font-bold text-green-accent uppercase tracking-wider">
                             {t("detail.stage")} {i + 1}
                           </span>
-                          <h3 className="text-lg font-bold text-primary mt-1 mb-2">{step.title}</h3>
-                          <p className="text-sm text-muted-foreground leading-relaxed">{step.desc}</p>
+                          <h3 className="text-lg font-bold text-primary mt-1 mb-2">{t(step.title) !== step.title ? t(step.title) : step.title}</h3>
+                          <p className="text-sm text-muted-foreground leading-relaxed">{t(step.desc) !== step.desc ? t(step.desc) : step.desc}</p>
                         </div>
                       </div>
                       <div className="absolute left-0 md:left-1/2 md:-translate-x-1/2 w-12 h-12 rounded-full gradient-accent flex items-center justify-center z-10 shrink-0" style={{ boxShadow: "var(--shadow-md)" }}>
@@ -149,7 +149,7 @@ const ProductDetailPage = () => {
       <section className="section-padding bg-background">
         <div className="container mx-auto text-center">
           <AnimatedSection>
-            <h2 className="section-title mb-4">{t("detail.interested")} {product.name}?</h2>
+            <h2 className="section-title mb-4">{t("detail.interested")} {t(product.name)}?</h2>
             <p className="section-subtitle mb-8">{t("detail.cta_desc")}</p>
             <div className="flex flex-wrap gap-4 justify-center">
               <button
