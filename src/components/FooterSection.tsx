@@ -64,15 +64,15 @@ const FooterSection = () => {
             </div>
             <div className="flex flex-col space-y-4 text-sm text-primary-foreground/70 w-fit mx-auto">
               <a
-                href="https://www.alnusacommodity.com"
+                href="https://albanusantara.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex gap-3 items-center hover:text-primary-foreground transition-colors group"
               >
                 <Globe className="w-4 h-4 shrink-0 text-primary-foreground/60 group-hover:text-primary-foreground transition-colors" />
-                <span>www.alnusacommodity.com</span>
+                <span>albanusantara.com</span>
               </a>
-              <a
+              {/* <a
                 href="https://www.linkedin.com/company/alnusacommodity"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -89,7 +89,7 @@ const FooterSection = () => {
               >
                 <Linkedin className="w-4 h-4 shrink-0 text-primary-foreground/60 group-hover:text-primary-foreground transition-colors" />
                 <span>alnusacommodity</span>
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
