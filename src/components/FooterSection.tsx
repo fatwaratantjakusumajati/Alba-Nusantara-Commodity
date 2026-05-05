@@ -48,9 +48,9 @@ const FooterSection = () => {
                 <Phone className="w-4 h-4 shrink-0 text-primary-foreground/60 group-hover:text-primary-foreground transition-colors" />
                 <span>+62 857 8024 6440</span>
               </a>
-              <a href="mailto:info@alnusacommodity.com" className="flex gap-3 items-center hover:text-primary-foreground transition-colors group">
+              <a href="mailto:info@albanusantara.com" className="flex gap-3 items-center hover:text-primary-foreground transition-colors group">
                 <Mail className="w-4 h-4 shrink-0 text-primary-foreground/60 group-hover:text-primary-foreground transition-colors" />
-                <span>info@alnusacommodity.com</span>
+                <span>info@albanusantara.com</span>
               </a>
             </div>
           </div>
