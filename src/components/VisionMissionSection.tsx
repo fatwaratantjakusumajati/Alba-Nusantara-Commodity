@@ -6,10 +6,10 @@ const VisionMissionSection = () => {
   const { t } = useLanguage();
 
   const missions = [
-    t("vm.mission.1"),
-    t("vm.mission.2"),
-    t("vm.mission.3"),
-    t("vm.mission.4"),
+    { title: t("vm.mission.1.title"), desc: t("vm.mission.1.desc") },
+    { title: t("vm.mission.2.title"), desc: t("vm.mission.2.desc") },
+    { title: t("vm.mission.3.title"), desc: t("vm.mission.3.desc") },
+    { title: t("vm.mission.4.title"), desc: t("vm.mission.4.desc") },
   ];
 
   return (
@@ -43,7 +43,10 @@ const VisionMissionSection = () => {
                 {missions.map((m, i) => (
                   <div key={i} className="flex gap-3 items-start">
                     <CheckCircle2 className="w-5 h-5 text-green-accent mt-0.5 shrink-0" />
-                    <p className="text-muted-foreground leading-relaxed">{m}</p>
+                    <div>
+                      <h4 className="text-primary font-bold">{m.title}</h4>
+                      <p className="text-muted-foreground leading-relaxed">{m.desc}</p>
+                    </div>
                   </div>
                 ))}
               </div>

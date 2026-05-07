@@ -70,21 +70,25 @@ const translations: Record<string, Record<Language, string>> = {
     en: "To be the foremost bridge between the richness of the Indonesian archipelago and the global market, rooted in integrity and a commitment to shared prosperity.",
   },
   "vm.mission.title": { id: "Misi", en: "Mission" },
-  "vm.mission.1": {
-    id: "Menyediakan dan mengirimkan komoditas Indonesia berkualitas tinggi yang memenuhi standar internasional",
-    en: "To source and deliver high-quality Indonesian commodities that meet international standards",
+  "vm.mission.1.title": { id: "Menghadirkan Keunggulan", en: "Curating Excellence" },
+  "vm.mission.1.desc": {
+    id: "Mencari dan mengirimkan komoditas premium Indonesia yang melampaui ekspektasi global.",
+    en: "Sourcing and delivering premium Indonesian commodities that surpass global expectations.",
   },
-  "vm.mission.2": {
-    id: "Membangun kemitraan yang transparan, andal, dan jangka panjang di seluruh rantai pasok",
-    en: "To build transparent, reliable, and long-term partnerships across the supply chain",
+  "vm.mission.2.title": { id: "Membangun Kepercayaan", en: "Cultivating Trust" },
+  "vm.mission.2.desc": {
+    id: "Membangun kemitraan yang transparan dan abadi di setiap rantai pasokan.",
+    en: "Building transparent, enduring partnerships across every link of the supply chain.",
   },
-  "vm.mission.3": {
-    id: "Memberdayakan produsen lokal melalui kolaborasi yang adil dan berkelanjutan",
-    en: "To empower local producers through fair and sustainable collaboration",
+  "vm.mission.3.title": { id: "Memberdayakan Komunitas", en: "Empowering Communities" },
+  "vm.mission.3.desc": {
+    id: "Mendorong kolaborasi yang adil dan berkelanjutan yang menghargai produsen lokal kita.",
+    en: "Fostering fair and sustainable collaborations that honor our local producers.",
   },
-  "vm.mission.4": {
-    id: "Memperkuat kehadiran dan reputasi global produk alam Indonesia",
-    en: "To strengthen the global presence and reputation of Indonesian natural products",
+  "vm.mission.4.title": { id: "Mengangkat Warisan", en: "Elevating Heritage" },
+  "vm.mission.4.desc": {
+    id: "Memperjuangkan kehadiran dan reputasi global dari kekayaan alam Indonesia.",
+    en: "Championing the global presence and reputation of Indonesia’s natural wealth.",
   },
 
   // Core Values

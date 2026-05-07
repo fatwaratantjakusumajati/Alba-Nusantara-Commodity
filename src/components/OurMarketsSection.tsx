@@ -15,6 +15,7 @@ const Flag = ({ code, size = 48 }: { code: string; size?: number }) => (
     alt={code}
     width={size}
     height={size * 0.75}
+    style={{ width: size, height: size * 0.75 }}
     className="object-cover rounded-sm mx-auto"
   />
 );
