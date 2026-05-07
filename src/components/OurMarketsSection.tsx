@@ -3,11 +3,21 @@ import { Globe, TrendingUp, ArrowRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const markets = [
-  { country: "USA", flag: "🇺🇸", region: "North America" },
-  { country: "Canada", flag: "🇨🇦", region: "North America" },
-  { country: "Taiwan", flag: "🇹🇼", region: "Asia Pacific" },
-  { country: "Australia", flag: "🇦🇺", region: "Asia Pacific" },
+  { country: "USA", code: "us", region: "North America" },
+  { country: "Canada", code: "ca", region: "North America" },
+  { country: "Taiwan", code: "tw", region: "Asia Pacific" },
+  { country: "Australia", code: "au", region: "Asia Pacific" },
 ];
+
+const Flag = ({ code, size = 48 }: { code: string; size?: number }) => (
+  <img
+    src={`https://flagcdn.com/w80/${code}.png`}
+    alt={code}
+    width={size}
+    height={size * 0.75}
+    className="object-cover rounded-sm mx-auto"
+  />
+);
 
 const OurMarketsSection = () => {
   const { t } = useLanguage();
@@ -25,24 +35,36 @@ const OurMarketsSection = () => {
 
         <AnimatedSection>
           <div className="max-w-5xl mx-auto">
-            {/* Main visual card */}
             <div className="rounded-2xl border border-border bg-card overflow-hidden" style={{ boxShadow: "var(--shadow-lg)" }}>
-              {/* Export flow visual */}
               <div className="p-8 md:p-12 bg-gradient-to-br from-primary/5 via-transparent to-green-accent/5">
+
+                {/* Export flow visual */}
                 <div className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-10 mb-10">
+                  {/* Indonesia */}
                   <div className="flex flex-col items-center gap-2">
-                    <span className="text-4xl">🇮🇩</span>
+                    <div className="rounded-lg border border-green-accent/30 bg-green-accent/10 p-1.5">
+                      <Flag code="id" size={48} />
+                    </div>
                     <span className="text-sm font-bold text-primary">Indonesia</span>
                   </div>
+
+                  {/* Arrow */}
                   <div className="flex items-center gap-2">
                     <div className="w-16 md:w-24 h-px bg-gradient-to-r from-primary/40 to-green-accent/40 relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-primary/40 to-green-accent/40 animate-pulse" />
                     </div>
                     <ArrowRight className="w-5 h-5 text-green-accent" />
                   </div>
+
+                  {/* Destination flags */}
                   <div className="flex items-center gap-3 flex-wrap justify-center">
                     {markets.map((m) => (
-                      <span key={m.country} className="text-3xl">{m.flag}</span>
+                      <div
+                        key={m.country}
+                        className="rounded-lg border border-green-accent/30 bg-green-accent/10 p-1.5"
+                      >
+                        <Flag code={m.code} size={48} />
+                      </div>
                     ))}
                   </div>
                 </div>
@@ -52,9 +74,9 @@ const OurMarketsSection = () => {
                   {markets.map((market, i) => (
                     <AnimatedSection key={market.country} delay={i * 0.1}>
                       <div className="group relative rounded-xl bg-card border border-border p-5 text-center transition-all duration-300 hover:border-green-accent/40 hover:shadow-md">
-                        <span className="text-4xl block mb-3 group-hover:scale-110 transition-transform duration-300">
-                          {market.flag}
-                        </span>
+                        <div className="mb-3 flex justify-center group-hover:scale-110 transition-transform duration-300">
+                          <Flag code={market.code} size={48} />
+                        </div>
                         <h3 className="text-base font-bold text-primary">{market.country}</h3>
                         <p className="text-xs text-muted-foreground mt-1">{market.region}</p>
                       </div>
@@ -76,6 +98,7 @@ const OurMarketsSection = () => {
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </AnimatedSection>

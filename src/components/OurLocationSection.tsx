@@ -1,52 +1,65 @@
-import AnimatedSection from "@/components/AnimatedSection";
 import { MapPin } from "lucide-react";
+import AnimatedSection from "./AnimatedSection";
 import { useLanguage } from "@/contexts/LanguageContext";
 import product1 from "@/assets/product1.jpg";
 import product2 from "@/assets/product2.jpg";
 import product3 from "@/assets/product3.jpg";
 import product4 from "@/assets/product4.jpg";
 
-const productLocations = [
-  {
-    name: "Bird Nest",
-    image: product2,
-    gradient: "from-amber-500/20 to-orange-500/20",
-    borderColor: "border-amber-500/30",
-    accentColor: "text-amber-600",
-    dotColor: "bg-amber-500",
-    locations: ["Kalimantan Barat", "Sulawesi Utara", "Jawa Timur", "Nusa Tenggara Barat"],
-  },
-  {
-    name: "Cloves",
-    image: product4,
-    gradient: "from-green-500/20 to-emerald-500/20",
-    borderColor: "border-green-500/30",
-    accentColor: "text-green-600",
-    dotColor: "bg-green-500",
-    locations: ["Manado", "Nusa Tenggara Timur", "Bali", "Ponorogo", "Malang", "Tulungagung", "Trenggalek"],
-  },
-  {
-    name: "Cocoa",
-    image: product3,
-    gradient: "from-amber-700/20 to-yellow-700/20",
-    borderColor: "border-amber-700/30",
-    accentColor: "text-amber-800",
-    dotColor: "bg-amber-700",
-    locations: ["Jawa Timur"],
-  },
-  {
-    name: "Essential Oil",
-    image: product1,
-    gradient: "from-emerald-500/20 to-teal-500/20",
-    borderColor: "border-emerald-500/30",
-    accentColor: "text-emerald-600",
-    dotColor: "bg-emerald-500",
-    locations: ["Jawa Timur"],
-  },
-];
-
 const OurLocationSection = () => {
   const { t } = useLanguage();
+
+  const productLocations = [
+    {
+      name: t("loc.bird_nest"),
+      image: product2,
+      gradient: "from-amber-500/20 to-orange-500/20",
+      borderColor: "border-amber-500/30",
+      accentColor: "text-amber-600",
+      dotColor: "bg-amber-500",
+      locations: [
+        t("loc.bird_nest.loc1"),
+        t("loc.bird_nest.loc2"),
+        t("loc.bird_nest.loc3"),
+        t("loc.bird_nest.loc4"),
+      ],
+    },
+    {
+      name: t("loc.cloves"),
+      image: product4,
+      gradient: "from-green-500/20 to-emerald-500/20",
+      borderColor: "border-green-500/30",
+      accentColor: "text-green-600",
+      dotColor: "bg-green-500",
+      locations: [
+        t("loc.cloves.loc1"),
+        t("loc.cloves.loc2"),
+        t("loc.cloves.loc3"),
+        t("loc.cloves.loc4"),
+        t("loc.cloves.loc5"),
+        t("loc.cloves.loc6"),
+        t("loc.cloves.loc7"),
+      ],
+    },
+    {
+      name: t("loc.cocoa"),
+      image: product3,
+      gradient: "from-amber-700/20 to-yellow-700/20",
+      borderColor: "border-amber-700/30",
+      accentColor: "text-amber-800",
+      dotColor: "bg-amber-700",
+      locations: [t("loc.cocoa.loc1")],
+    },
+    {
+      name: t("loc.essential_oil"),
+      image: product1,
+      gradient: "from-emerald-500/20 to-teal-500/20",
+      borderColor: "border-emerald-500/30",
+      accentColor: "text-emerald-600",
+      dotColor: "bg-emerald-500",
+      locations: [t("loc.essential_oil.loc1")],
+    },
+  ];
 
   return (
     <section className="section-padding bg-background" id="location">

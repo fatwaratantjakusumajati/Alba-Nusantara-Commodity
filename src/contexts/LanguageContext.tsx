@@ -27,16 +27,16 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Hero
   "hero.badge": {
-    id: "Produk Alam Premium dari Indonesia",
-    en: "Premium Natural Products from Indonesia",
+    id: "Berasal dari Indonesia, Dipercaya di Seluruh Dunia",
+    en: "Sourced in Indonesia, Trusted Worldwide",
   },
-  "hero.title1": { id: "Kekayaan Alam", en: "Natural Wealth of" },
+  "hero.title1": { id: "Yang Terbaik di", en: "The Best of" },
   "hero.title2": { id: "Nusantara", en: "Nusantara" },
   "hero.desc": {
-    id: "Menghadirkan produk alam premium, Essential Oil, Bird Nest, Cocoa Beans, dan Clove, dengan kualitas terbaik dari bumi Indonesia.",
-    en: "Delivering premium natural products, Essential Oil, Bird Nest, Cocoa Beans, and Clove, with the finest quality from Indonesia.",
+    id: "Minyak esensial, sarang burung, kakao, dan cengkeh.\nDitangani dengan baik. Disampaikan secara konsisten.",
+    en: "Essential oils, bird nest, cocoa, and clove.\n Handled right. Delivered consistently.",
   },
-  "hero.cta": { id: "Lihat Produk", en: "View Products" },
+  "hero.cta": { id: "Jelajahi Produk", en: "Explore Products" },
 
   // About
   "about.label": { id: "Tentang Kami", en: "About Us" },
@@ -44,10 +44,10 @@ const translations: Record<string, Record<Language, string>> = {
     id: "Produk Alam Premium dari Indonesia",
     en: "Premium Natural Products from Indonesia",
   },
-  "about.established": { id: "Didirikan Tahun 2020", en: "Founded in 2020" },
+  "about.established": { id: "Sejak 2020", en: "Since 2020" },
   "about.p1": {
-    id: "Alba Nusantara Commodity (ALNC) adalah perusahaan sourcing dan perdagangan komoditas Indonesia yang berkomitmen menghadirkan produk pertanian dan alam premium dari jantung Nusantara ke pasar domestik dan global. Dibangun di atas kemitraan lokal yang kuat dan rasa hormat mendalam terhadap sumber daya alam Indonesia, ALNC berperan sebagai jembatan antara produsen terpercaya dan pembeli yang mencari kualitas konsisten, transparansi, dan keandalan.",
-    en: "Alba Nusantara Commodity (ALNC) is an Indonesian commodity sourcing and trading company committed to delivering premium agricultural and natural products from the heart of the archipelago to domestic and global markets. Built on strong local partnerships and deep respect for Indonesia's natural resources, ALNC serves as a bridge between trusted producers and buyers seeking consistent quality, transparency, and reliability.",
+    id: "Alba Nusantara Commodity (ALNC) adalah perusahaan pengadaan dan perdagangan yang berbasis di Indonesia dan berfokus pada penyediaan produk pertanian dan alam berkualitas premium. Dari jantung nusantara hingga pasar internasional, kami berperan sebagai jembatan yang andal antara mitra lokal tepercaya dan pembeli yang tidak mau berkompromi dalam hal kualitas. Kami beroperasi dengan filosofi sederhana: komoditas adalah hasil dari kemitraan antara tanah dan masyarakatnya. Dengan mempertahankan standar yang ketat dan hubungan lokal yang kokoh, ALNC memastikan bahwa warisan alam Indonesia yang kaya memenuhi harapan pasar global yang cerdas.",
+    en: "Alba Nusantara Commodity (ALNC) is an Indonesian-based sourcing and trading house dedicated to delivering premium agricultural and natural products. From the heart of the archipelago to international markets, we serve as a reliable link between trusted local partners and buyers who refuse to compromise on quality. We operate with a simple philosophy: commodities are the result of a partnership between the land and its people. By maintaining rigorous standards and deep-rooted local relationships, ALNC ensures that Indonesia’s rich natural heritage meets the expectations of a sophisticated global audience.",
   },
   "about.p2": {
     id: "Di ALNC, kami percaya bahwa komoditas lebih dari sekadar produk, mereka adalah hasil dari kerja sama antara manusia, tanah, dan warisan budaya. Peran kami adalah memastikan nilai-nilai ini tetap terjaga sambil memenuhi standar pasar modern dan permintaan global.",
@@ -66,8 +66,8 @@ const translations: Record<string, Record<Language, string>> = {
   },
   "vm.vision.title": { id: "Visi", en: "Vision" },
   "vm.vision.desc": {
-    id: "Menjadi mitra global terpercaya untuk komoditas Indonesia dengan menghubungkan sumber daya alam Nusantara ke dunia secara bertanggung jawab.",
-    en: "To become a trusted global partner for Indonesian commodities by responsibly connecting Nusantara's natural resources with the world.",
+    id: "Menjadi jembatan utama yang menghubungkan kekayaan kepulauan Indonesia dengan pasar global, dengan berlandaskan integritas dan komitmen terhadap kemakmuran bersama.",
+    en: "To be the foremost bridge between the richness of the Indonesian archipelago and the global market, rooted in integrity and a commitment to shared prosperity.",
   },
   "vm.mission.title": { id: "Misi", en: "Mission" },
   "vm.mission.1": {
@@ -181,6 +181,26 @@ const translations: Record<string, Record<Language, string>> = {
     id: "Kami bermitra dengan produsen lokal terpercaya di berbagai wilayah strategis Indonesia untuk menghadirkan komoditas berkualitas terbaik",
     en: "We partner with trusted local producers across Indonesia's key regions to deliver the finest quality commodities",
   },
+  "loc.bird_nest": { id: "Sarang Burung Walet", en: "Bird Nest" },
+  "loc.bird_nest.loc1": { id: "Kalimantan Barat", en: "West Kalimantan" },
+  "loc.bird_nest.loc2": { id: "Sulawesi Utara", en: "North Sulawesi" },
+  "loc.bird_nest.loc3": { id: "Jawa Timur", en: "East Java" },
+  "loc.bird_nest.loc4": { id: "Nusa Tenggara Barat", en: "West Nusa Tenggara" },
+
+  "loc.cloves": { id: "Cengkeh", en: "Cloves" },
+  "loc.cloves.loc1": { id: "Manado", en: "Manado" },
+  "loc.cloves.loc2": { id: "Nusa Tenggara Timur", en: "East Nusa Tenggara" },
+  "loc.cloves.loc3": { id: "Bali", en: "Bali" },
+  "loc.cloves.loc4": { id: "Ponorogo", en: "Ponorogo" },
+  "loc.cloves.loc5": { id: "Malang", en: "Malang" },
+  "loc.cloves.loc6": { id: "Tulungagung", en: "Tulungagung" },
+  "loc.cloves.loc7": { id: "Trenggalek", en: "Trenggalek" },
+
+  "loc.cocoa": { id: "Kakao", en: "Cocoa" },
+  "loc.cocoa.loc1": { id: "Jawa Timur", en: "East Java" },
+
+  "loc.essential_oil": { id: "Minyak Atsiri", en: "Essential Oil" },
+  "loc.essential_oil.loc1": { id: "Jawa Timur", en: "East Java" },
 
   // Our Markets
   "mkt.label": { id: "Jangkauan Global", en: "Global Reach" },
@@ -197,10 +217,10 @@ const translations: Record<string, Record<Language, string>> = {
 
   // Products
   "prod.label": { id: "Produk", en: "Products" },
-  "prod.title": { id: "Produk Unggulan Kami", en: "Our Featured Products" },
+  "prod.title": { id: "Komoditas Unggulan Kami", en: "Our Signature Commodities" },
   "prod.subtitle": {
-    id: "Produk alam premium Indonesia yang diproses dengan teknologi modern",
-    en: "Premium Indonesian natural products processed with modern technology",
+    id: "Membawa jiwa kepulauan ini ke seluruh dunia, di mana keaslian Nusantara berpadu dengan standar industri global.",
+    en: "Bringing the soul of the archipelago to the world, where the purity of Nusantara meets global industrial standards.",
   },
   "prod.essential_oil.tagline": {
     id: "Minyak Atsiri Indonesia Pilihan untuk Kebutuhan Industri dan Komersial",

@@ -16,7 +16,7 @@ const WhyChooseUsSection = () => {
 
   return (
     <section id="why-choose-us" className="section-padding bg-muted/50">
-      <div className="container mx-auto">
+      <div className="container mx-auto">   {/* container max-w-7xl mx-auto px-6 */}
         <AnimatedSection className="text-center mb-16">
           <span className="text-sm font-semibold text-accent uppercase tracking-widest">
             {t("wcu.label")}
