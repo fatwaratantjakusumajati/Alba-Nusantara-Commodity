@@ -6,7 +6,7 @@ import detailBirdnest from "@/assets/detail-birdnest.jpg";
 import detailCocoa from "@/assets/detail-cocoa.jpg";
 import detailClove from "@/assets/detail-clove.jpg";
 import detailEssentialOil from "@/assets/detail-essential-oil.jpg";
-import { Droplets, Flower2, FlaskConical, ShieldCheck, Package, Truck, Thermometer, Sun, Search, Scissors, TreePine, Bug, Waves, Filter, Bird, Home, ClipboardCheck, Sparkles, Bean, Cherry, Timer, Wind, Warehouse } from "lucide-react";
+import { Droplets, Flower2, FlaskConical, ShieldCheck, Package, Truck, Thermometer, Sun, Search, Scissors, TreePine, Bug, Waves, Filter, Bird, Home, ClipboardCheck, Sparkles, Bean, Cherry, Wind, Warehouse } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 export interface ProductStep {
@@ -90,7 +90,7 @@ export const productsData: ProductData[] = [
     steps: [
       { icon: Cherry, title: "prod.cocoa.step1.title", desc: "prod.cocoa.step1.desc" },
       { icon: Scissors, title: "prod.cocoa.step2.title", desc: "prod.cocoa.step2.desc" },
-      { icon: Timer, title: "prod.cocoa.step3.title", desc: "prod.cocoa.step3.desc" },
+      { icon: Droplets, title: "prod.cocoa.step3.title", desc: "prod.cocoa.step3.desc" },
       { icon: Sun, title: "prod.cocoa.step4.title", desc: "prod.cocoa.step4.desc" },
       { icon: Search, title: "prod.cocoa.step5.title", desc: "prod.cocoa.step5.desc" },
       { icon: Warehouse, title: "prod.cocoa.step6.title", desc: "prod.cocoa.step6.desc" },
