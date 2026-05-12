@@ -6,6 +6,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 import Header from "@/components/Header";
 import FooterSection from "@/components/FooterSection";
 import ScrollToTop from "@/components/ScrollToTop";
+import Seo from "@/components/Seo";
 
 const ProductDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -16,6 +17,7 @@ const ProductDetailPage = () => {
   if (!product) {
     return (
       <>
+        <Seo title={`404 - ${t("detail.not_found")}`} description={t("detail.not_found")} noIndex />
         <Header />
         <div className="min-h-screen flex items-center justify-center pt-20">
           <div className="text-center">
@@ -29,8 +31,12 @@ const ProductDetailPage = () => {
     );
   }
 
+  const pageTitle = `${t(product.name)} | Alba Nusantara Commodity`;
+  const pageDescription = t(product.tagline) !== product.tagline ? t(product.tagline) : product.tagline;
+
   return (
     <>
+      <Seo title={pageTitle} description={pageDescription} image={product.detailImage || product.image} />
       <Header />
 
       <section className="relative pt-20">

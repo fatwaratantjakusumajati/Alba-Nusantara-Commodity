@@ -10,24 +10,31 @@ import OurMarketsSection from "@/components/OurMarketsSection";
 import CtaSection from "@/components/CtaSection";
 import FooterSection from "@/components/FooterSection";
 import ScrollToTop from "@/components/ScrollToTop";
+import Seo from "@/components/Seo";
+import { useLanguage } from "@/contexts/LanguageContext";
 
-const Index = () => (
-  <>
-    <Header />
-    <main>
-      <HeroSection />
-      <AboutSection />
-      <VisionMissionSection />
-      <CoreValuesSection />
-      <WhyChooseUsSection />
-      <OurLocationSection />
-      <OurMarketsSection />
-      <ProductsSection />
-      <CtaSection />
-    </main>
-    <FooterSection />
-    <ScrollToTop />
-  </>
-);
+const Index = () => {
+  const { t } = useLanguage();
+
+  return (
+    <>
+      <Seo title={t("seo.title")} description={t("seo.description")} />
+      <Header />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <VisionMissionSection />
+        <CoreValuesSection />
+        <WhyChooseUsSection />
+        <OurLocationSection />
+        <OurMarketsSection />
+        <ProductsSection />
+        <CtaSection />
+      </main>
+      <FooterSection />
+      <ScrollToTop />
+    </>
+  );
+};
 
 export default Index;

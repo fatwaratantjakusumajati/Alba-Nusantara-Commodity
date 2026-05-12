@@ -38,6 +38,16 @@ const translations: Record<string, Record<Language, string>> = {
   },
   "hero.cta": { id: "Jelajahi Produk", en: "Explore Products" },
 
+  // SEO
+  "seo.title": {
+    id: "Alba Nusantara Commodity | Komoditas Alam Premium Indonesia",
+    en: "Alba Nusantara Commodity | Premium Indonesian Natural Commodities",
+  },
+  "seo.description": {
+    id: "ALNC menyediakan minyak atsiri, sarang burung walet, biji kakao, dan cengkeh berkualitas premium untuk pasar global.",
+    en: "ALNC supplies premium Indonesian essential oils, bird nest, cocoa beans, and cloves for global markets.",
+  },
+
   // About
   "about.label": { id: "Tentang Kami", en: "About Us" },
   "about.title": {
